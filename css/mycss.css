@@ -1,0 +1,103 @@
+
+/*noinspection ALL*/
+#data1_Button,#data2_Button,#data3_Button,#sub_Button,.MyButton{
+	margin: 10px 0px;
+	height: 40px;
+	line-height: 40px;
+	width: 300px;
+
+	cursor: pointer;
+	color: #888;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: center;
+}
+#data1_Button:hover,#data2_Button:hover,#sub_Button:hover,#data3_Button:hover,.MyButton:hover{
+	color: #444;
+	background: #eee;
+	border-color: #ccc;
+	text-decoration: none
+}
+#data1,#data2,#data3,#sub{
+	display: none;
+}
+
+.boxofchart{
+    margin: 20px auto;
+    padding:10px 30px;
+    align-content: center;
+	width: 90%;
+    max-width: 1200px;
+	box-shadow: 0 0 20px rgba(150,150,150,0.1);
+	border-radius: 5px;
+}
+
+#idOfRelat table{
+	border: 0 #fff;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 35px;
+	width: 100%; 
+}
+#idOfRelat table td{
+	border: 0 #fff;
+	border-bottom:1px solid #eee; 
+}
+#idOfRelat table tr{
+	transition:0.3s all; 
+}
+#idOfRelat table tr:hover{
+	transition:0.3s all; 
+	background-color: #eee;
+}
+.boxofchart p{
+	color: #444;
+}
+.boxborder{
+	border: 1px solid rgba(150,150,150,0.2);
+}
+
+.centeral{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+}
+
+.notice_border{
+	background: rgba(0,100,200,0.05);
+	border: 1px solid rgba(0,100,200,0.20);
+}
+.notice_border h2{
+	color: rgba(0,100,200,1.00);
+	
+}
+.warning_border{
+	background: rgba(200,100,100,0.05);
+	border: 1px solid rgba(200,100,100,0.20);
+}
+.warning_border h2{
+	color: rgba(200,100,100,1.00);
+	
+}
+body{
+	min-height: 100vh;
+}
+footer{
+	text-align: center;
+}
+.infoBox{
+	transition: 0.3s;
+	position: fixed;
+	top:0;
+	background: rgba(255,255,255,0.8);
+	z-index: 10;
+	left:0;
+	right:0;
+}
+.infoBox:hover{
+	transition: 0.3s;
+	background: rgba(255,255,255,1);
+}
