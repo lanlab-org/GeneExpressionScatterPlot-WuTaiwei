@@ -1,3 +1,6 @@
+# [完整教程--idea使用git进行项目管理](https://www.cnblogs.com/java-maowei/p/5950930.html)
+这篇教程有点老了，但是还可以用，现在实现了运用IDEA实现项目管理。
+
 # [C3如何载入自定的颜色](https://codepen.io/stefita/pen/RPWLWr)
 
 ```js
