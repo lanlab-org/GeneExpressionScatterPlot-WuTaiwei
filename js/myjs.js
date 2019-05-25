@@ -121,31 +121,24 @@ function beginSSP() {
     let countDots = 0;
     //遍历info改成了遍历d1
     for (let p in d1) {
-        //console.log(p.substring(2, p.length - 2));
-        //兼容R0···XX R0···XXX
-        /*
-        * 下面的代码思路是这样的：先假设当前p是R0X格式的字符串，然后去查找是否存在
-        * 如果去掉两个末尾X的串在info存在，那就把p修正成去掉两个末尾的。
-        * 如果去掉三个末尾X的串在info存在，那就把p修正成去掉三个末尾的。
-        * */
         if (d1.hasOwnProperty(p)) {
-            //注意可能会遍历到继承的属性，所以要检查一下是不是当前对象自己的属性，本例子中不会。
-            let R0_p_X = p;
-            if (p[0] === 'R') {
-                let xxx;
-                if (info[xxx = p.substring(2, p.length - 2)] !== undefined) {
-                    p = xxx;
-                } else if (info[xxx = p.substring(2, p.length - 3)] !== undefined) {
-                    p = xxx;
-                }
-            }
-            if (!!d2[R0_p_X]) {
-                //如果没有info，一律归入default
-                let nm = info[p] === undefined ? "default" : info[p].category;
-                let dtl = info[p] === undefined ? "" : info[p].detail;
+            //注意可能会遍历到继承的属性，所以要检查一下是不是当前对象自己的属性，本例子中其实不会。
+            if (!!d2[p]) {
+                let nm = (!info[p]) ? "unknown" : info[p].category;
+                //name
+                let dtl = (!info[p]) ? "" : info[p].detail;
+                //detail
 
-                if (oto[nm] === undefined) {
-
+                if (!!oto[nm]) {
+                    //console.log(mp[nm]);
+                    co[mp[nm]].push(d2[p]);
+                    dtls[mp[nm]].push(p);
+                    co[mp[nm + "."]].push(d1[p]);
+                    // dtls[mp[nm + "."]].push(info[p].detail);
+                    //d1做x轴 存到nm+"."的标记里；
+                    dtls[mp[nm + "."]].push(dtl);
+                    countDots++;
+                } else {
                     oto[nm] = nm + ".";
                     co.push([nm]);
                     dtls.push([nm]);
@@ -155,14 +148,6 @@ function beginSSP() {
                     dtls.push([nm + "."]);
                     mp[nm + "."] = co.length - 1;
                 }
-                //console.log(mp[nm]);
-                co[mp[nm]].push(d2[R0_p_X]);
-                dtls[mp[nm]].push(p);
-                co[mp[nm + "."]].push(d1[R0_p_X]);
-                // dtls[mp[nm + "_"]].push(info[p].detail);
-                //d1做x轴 存到nm+"_"的标记里；
-                dtls[mp[nm + "."]].push(dtl);
-                countDots++;
             }
         }
     }
