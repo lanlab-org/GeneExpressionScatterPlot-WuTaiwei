@@ -1,3 +1,7 @@
+#[关于显著性检验，你想要的都在这儿了！！（基础篇）](https://www.cnblogs.com/hdu-zsk/p/6293721.html)
+学习显著性检验
+
+
 # [完整教程--idea使用git进行项目管理](https://www.cnblogs.com/java-maowei/p/5950930.html)
 这篇教程有点老了，但是还可以用，现在实现了运用IDEA实现项目管理。
 
