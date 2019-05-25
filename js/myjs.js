@@ -1,5 +1,6 @@
 /* exported beginSSP, clearButton, returenButton,infoButton,calcButton*/
 
+/*
 function objKeySort(obj) {//排序的函数
     const newkey = Object.keys(obj).sort();
     //先用Object内置类的keys方法获取要排序对象的属性名，再利用Array原型上的sort方法对获取的属性名进行排序，newkey是一个数组
@@ -9,6 +10,7 @@ function objKeySort(obj) {//排序的函数
     }
     return newObj;//返回排好序的新对象
 }
+*/
 
 //初始化数组和对象
 let d1 = [];
@@ -137,32 +139,31 @@ function beginSSP() {
                     p = xxx;
                 }
             }
-            if (d2[R0_p_X] === undefined) {
-                continue;
+            if (!!d2[R0_p_X]) {
+                //如果没有info，一律归入default
+                let nm = info[p] === undefined ? "default" : info[p].category;
+                let dtl = info[p] === undefined ? "" : info[p].detail;
+
+                if (oto[nm] === undefined) {
+
+                    oto[nm] = nm + ".";
+                    co.push([nm]);
+                    dtls.push([nm]);
+                    mp[nm] = co.length - 1;
+
+                    co.push([nm + "."]);
+                    dtls.push([nm + "."]);
+                    mp[nm + "."] = co.length - 1;
+                }
+                //console.log(mp[nm]);
+                co[mp[nm]].push(d2[R0_p_X]);
+                dtls[mp[nm]].push(p);
+                co[mp[nm + "."]].push(d1[R0_p_X]);
+                // dtls[mp[nm + "_"]].push(info[p].detail);
+                //d1做x轴 存到nm+"_"的标记里；
+                dtls[mp[nm + "."]].push(dtl);
+                countDots++;
             }
-            //如果没有info，一律归入default
-            let nm = info[p] === undefined ? "default" : info[p].tissue;
-            let dtl = info[p] === undefined ? "" : info[p].detail;
-
-            if (oto[nm] === undefined) {
-
-                oto[nm] = nm + ".";
-                co.push([nm]);
-                dtls.push([nm]);
-                mp[nm] = co.length - 1;
-
-                co.push([nm + "."]);
-                dtls.push([nm + "."]);
-                mp[nm + "."] = co.length - 1;
-            }
-            //console.log(mp[nm]);
-            co[mp[nm]].push(d2[R0_p_X]);
-            dtls[mp[nm]].push(p);
-            co[mp[nm + "."]].push(d1[R0_p_X]);
-            // dtls[mp[nm + "_"]].push(info[p].detail);
-            //d1做x轴 存到nm+"_"的标记里；
-            dtls[mp[nm + "."]].push(dtl);
-            countDots++;
         }
     }
     //提示信息（反馈点数）
@@ -192,6 +193,7 @@ function beginSSP() {
     console.log(co);
 
 
+    let c3;
     chart = c3.generate({
         transition: {
             duration: 500
