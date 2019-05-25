@@ -129,16 +129,7 @@ function beginSSP() {
                 let dtl = (!info[p]) ? "" : info[p].detail;
                 //detail
 
-                if (!!oto[nm]) {
-                    //console.log(mp[nm]);
-                    co[mp[nm]].push(d2[p]);
-                    dtls[mp[nm]].push(p);
-                    co[mp[nm + "."]].push(d1[p]);
-                    // dtls[mp[nm + "."]].push(info[p].detail);
-                    //d1做x轴 存到nm+"."的标记里；
-                    dtls[mp[nm + "."]].push(dtl);
-                    countDots++;
-                } else {
+                if (!oto[nm]) {
                     oto[nm] = nm + ".";
                     co.push([nm]);
                     dtls.push([nm]);
@@ -148,6 +139,15 @@ function beginSSP() {
                     dtls.push([nm + "."]);
                     mp[nm + "."] = co.length - 1;
                 }
+                //console.log(mp[nm]);
+                co[mp[nm]].push(d2[p]);
+                dtls[mp[nm]].push(p);
+                co[mp[nm + "."]].push(d1[p]);
+                // dtls[mp[nm + "."]].push(info[p].detail);
+                //d1做x轴 存到nm+"."的标记里；
+                dtls[mp[nm + "."]].push(dtl);
+                countDots++;
+
             }
         }
     }
@@ -178,8 +178,7 @@ function beginSSP() {
     console.log(co);
 
 
-    let c3;
-    chart = c3.generate({
+    let chart = c3.generate({
         transition: {
             duration: 500
         },
