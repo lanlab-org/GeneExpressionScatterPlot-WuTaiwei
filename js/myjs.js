@@ -32,13 +32,10 @@ $.ajax({
         colorSet = data;
     },
     error: function (XMLHttpRequest, status) {
-        switch (status) {
-            case "error":
-                alert("颜色丢失");
-                break;
-            default:
-                alert("访问异常");
-                break;
+        if (status === "error") {
+            alert("颜色丢失");
+        } else {
+            alert("访问异常");
         }
     }
 });
@@ -129,41 +126,44 @@ function beginSSP() {
         * 如果去掉两个末尾X的串在info存在，那就把p修正成去掉两个末尾的。
         * 如果去掉三个末尾X的串在info存在，那就把p修正成去掉三个末尾的。
         * */
-        let R0_p_X = p;
-        if (p[0] === 'R') {
-            let xxx;
-            if (info[xxx = p.substring(2, p.length - 2)] !== undefined) {
-                p = xxx;
-            } else if (info[xxx = p.substring(2, p.length - 3)] !== undefined) {
-                p = xxx;
+        if (d1.hasOwnProperty(p)) {
+            //注意可能会遍历到继承的属性，所以要检查一下是不是当前对象自己的属性，本例子中不会。
+            let R0_p_X = p;
+            if (p[0] === 'R') {
+                let xxx;
+                if (info[xxx = p.substring(2, p.length - 2)] !== undefined) {
+                    p = xxx;
+                } else if (info[xxx = p.substring(2, p.length - 3)] !== undefined) {
+                    p = xxx;
+                }
             }
-        }
-        if (d2[R0_p_X] === undefined) {
-            continue;
-        }
-        //如果没有info，一律归入default
-        let nm = info[p] === undefined ? "default" : info[p].tissue;
-        let dtl = info[p] === undefined ? "" : info[p].detail;
+            if (d2[R0_p_X] === undefined) {
+                continue;
+            }
+            //如果没有info，一律归入default
+            let nm = info[p] === undefined ? "default" : info[p].tissue;
+            let dtl = info[p] === undefined ? "" : info[p].detail;
 
-        if (oto[nm] === undefined) {
+            if (oto[nm] === undefined) {
 
-            oto[nm] = nm + ".";
-            co.push([nm]);
-            dtls.push([nm]);
-            mp[nm] = co.length - 1;
+                oto[nm] = nm + ".";
+                co.push([nm]);
+                dtls.push([nm]);
+                mp[nm] = co.length - 1;
 
-            co.push([nm + "."]);
-            dtls.push([nm + "."]);
-            mp[nm + "."] = co.length - 1;
+                co.push([nm + "."]);
+                dtls.push([nm + "."]);
+                mp[nm + "."] = co.length - 1;
+            }
+            //console.log(mp[nm]);
+            co[mp[nm]].push(d2[R0_p_X]);
+            dtls[mp[nm]].push(p);
+            co[mp[nm + "."]].push(d1[R0_p_X]);
+            // dtls[mp[nm + "_"]].push(info[p].detail);
+            //d1做x轴 存到nm+"_"的标记里；
+            dtls[mp[nm + "."]].push(dtl);
+            countDots++;
         }
-        //console.log(mp[nm]);
-        co[mp[nm]].push(d2[R0_p_X]);
-        dtls[mp[nm]].push(p);
-        co[mp[nm + "."]].push(d1[R0_p_X]);
-        // dtls[mp[nm + "_"]].push(info[p].detail);
-        //d1做x轴 存到nm+"_"的标记里；
-        dtls[mp[nm + "."]].push(dtl);
-        countDots++;
     }
     //提示信息（反馈点数）
     const len_d1 = Object.getOwnPropertyNames(d1).length;
@@ -171,11 +171,11 @@ function beginSSP() {
     const len_info = Object.getOwnPropertyNames(info).length;
 
     document.getElementById("AlarmFile1").innerHTML = d1name;
-    document.getElementById("dotsOfFile1").innerHTML = len_d1;
+    document.getElementById("dotsOfFile1").innerHTML = len_d1 + "";
     document.getElementById("AlarmFile2").innerHTML = d2name;
-    document.getElementById("dotsOfFile2").innerHTML = len_d2;
+    document.getElementById("dotsOfFile2").innerHTML = len_d2 + "";
     document.getElementById("AlarmFile3").innerHTML = infoname;
-    document.getElementById("dotsOfFile3").innerHTML = len_info;
+    document.getElementById("dotsOfFile3").innerHTML = len_info + "";
 
     //c3接口
 
@@ -275,7 +275,7 @@ function beginSSP() {
     myDate = new Date();
     time2 = myDate.getTime();
     document.getElementById("usedTime").innerHTML = time2 - time1 + "ms";
-    document.getElementById("dotsNum").innerHTML = countDots;
+    document.getElementById("dotsNum").innerHTML = countDots + "";
     infoButton();
     calcButton();
 }
@@ -376,12 +376,12 @@ function calcButton() {
     }
     for (const p in ans) {
         let tableItem = "<tr>";
-        tableItem += "<td>" + ans[p].id + "</td>";
-        tableItem += "<td>" + ans[p].n + "</td>";
+        tableItem += "<td> " + ans[p].id + " </td>";
+        tableItem += "<td> " + ans[p].n + " </td>";
         if (ans[p].n <= 2) {
             tableItem += "<td>数据量不足</td>";
         } else {
-            tableItem += "<td>" + ans[p].val.toFixed(8) + "</td>";
+            tableItem += "<td> " + ans[p].val.toFixed(8) + " </td>";
         }
         tableItem += "</tr>";
         document.getElementById("tableOfR").innerHTML += tableItem;
