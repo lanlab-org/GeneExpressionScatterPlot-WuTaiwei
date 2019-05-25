@@ -372,7 +372,7 @@ function calcButton() {
         document.getElementById("idOfRelat").innerHTML +=
             "<br>* 计算用时: " + (time2 - time1) + "ms";
         document.getElementById("tableOfR").innerHTML +=
-            "<tr><td>tissue</td><td>点数</td><td>相关系数</td>";
+            "<tr><td>category</td><td>点数</td><td>相关系数</td>";
     }
     for (const p in ans) {
         let tableItem = "<tr>";
