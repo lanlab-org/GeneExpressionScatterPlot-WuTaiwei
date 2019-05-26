@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -82,7 +82,6 @@
         <option value="$PROJECT_DIR$/js/myjs - 4月8日修改前版本.js" />
         <option value="$PROJECT_DIR$/css/mycss.css" />
         <option value="$PROJECT_DIR$/js/MyQuery.js" />
-        <option value="$PROJECT_DIR$/notes.md" />
         <option value="$PROJECT_DIR$/changeLog.md" />
         <option value="$PROJECT_DIR$/testcases.final/test_for_speed/N2_n1_S10000_info_miss_rate0.00_info.json" />
         <option value="$PROJECT_DIR$/testcases.final/test_for_correctness/N1_n0_S5_info_miss_rate0.00_g1.json" />
@@ -90,6 +89,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/myjs.js" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/notes.md" />
       </list>
     </option>
   </component>
@@ -224,7 +224,7 @@
       <workItem from="1555933149320" duration="3278000" />
       <workItem from="1557310712362" duration="2246000" />
       <workItem from="1558717539904" duration="4246000" />
-      <workItem from="1558750094041" duration="7636000" />
+      <workItem from="1558750094041" duration="8294000" />
     </task>
     <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
       <created>1558719642763</created>
@@ -338,11 +338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558790328626</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="学习显著性检验">
+      <created>1558805338398</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558805338398</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92216000" />
+    <option name="totallyTimeSpent" value="92874000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,7 +444,8 @@
     <MESSAGE value="修正myjs.js的冗余代码" />
     <MESSAGE value="修改了匹配的输入格式，未测试" />
     <MESSAGE value="修正匹配的输入格式，通过测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正匹配的输入格式，通过测试" />
+    <MESSAGE value="学习显著性检验" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习显著性检验" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -606,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
       <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
