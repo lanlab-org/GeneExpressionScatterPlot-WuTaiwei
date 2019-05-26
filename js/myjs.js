@@ -1,16 +1,6 @@
 /* exported beginSSP, clearButton, returenButton,infoButton,calcButton*/
 
-/*
-function objKeySort(obj) {//排序的函数
-    const newkey = Object.keys(obj).sort();
-    //先用Object内置类的keys方法获取要排序对象的属性名，再利用Array原型上的sort方法对获取的属性名进行排序，newkey是一个数组
-    const newObj = {};//创建一个新的对象，用于存放排好序的键值对
-    for (let i = 0; i < newkey.length; i++) {//遍历newkey数组
-        newObj[newkey[i]] = obj[newkey[i]];//向新创建的对象中按照排好的顺序依次增加键值对
-    }
-    return newObj;//返回排好序的新对象
-}
-*/
+
 
 //初始化数组和对象
 let d1 = [];
@@ -207,25 +197,29 @@ function beginSSP() {
             x: {
                 centered: true,
                 label: d1name,
-                padding: 0,                //标度的内边距，最小值最大值于外界的距离
-                min: 0,                   //标度最小值
+                padding: {
+                    left: 0,
+                },                //标度的内边距，最小值最大值于外界的距离
+                //min: 0,                   //标度最小值
                 tick: {
                     culling: false,         //跳跃标度设置
                     count: 30,              //标度个数
-                    fit: false,              //标度自适应
+                    //fit: false,              //标度自适应
                     format: function (x) {   //标度格式设置
                         return Math.round(x * 10000) / 10000;
                     }
                 }
             },
             y: {
-                culling: false,
                 label: d2name,
-                padding: 0,
-                min: 0,
+                padding: {
+                    bottom: 10,
+                },
+                //min: 0,
                 tick: {
+                    culling: false,
                     count: 30,
-                    fit: false,
+                    //fit: false,
                     format: function (x) {
                         return Math.round(x * 10000) / 10000;
                     }
