@@ -1,6 +1,82 @@
 /* exported beginSSP, clearButton, returenButton,infoButton,calcButton*/
 
 
+// p-value start
+
+
+/**
+ * @return {number}
+ */
+function TtoP(t, df) {
+    let p;
+    with (Math) {
+        let abst = abs(t), tsq = t * t;
+        if (df === 1) {
+            p = 1 - 2 * atan(abst) / PI;
+        } else if (df === 2) {
+            p = 1 - abst / sqrt(tsq + 2);
+        } else if (df === 3) {
+            p = 1 - 2 * (atan(abst / sqrt(3)) + abst * sqrt(3) / (tsq + 3)) / PI;
+        } else if (df === 4) {
+            p = 1 - abst * (1 + 2 / (tsq + 4)) / sqrt(tsq + 4);
+        } else {
+            let z = TtoZ(abst, df);
+            if (df > 4) {
+                p = Norm_p(z);
+            } else {
+                p = Norm_p(z);
+            }
+        }
+    }
+    return p;
+}
+
+/**
+ * @return {number}
+ */
+function TtoZ(t, df) {
+    let A9 = df - 0.5;
+    let B9 = 48 * A9 * A9;
+    let T9 = t * t / df, Z8, P7, B7, z;
+    with (Math) {
+        if (T9 >= 0.04) {
+            Z8 = A9 * log(1 + T9);
+        } else {
+            Z8 = A9 * (((1 - T9 * 0.75) * T9 / 3 - 0.5) * T9 + 1) * T9;
+        }
+        P7 = ((0.4 * Z8 + 3.3) * Z8 + 24) * Z8 + 85.5;
+        B7 = 0.8 * pow(Z8, 2) + 100 + B9;
+        z = (1 + (-P7 / B7 + Z8 + 3) / B9) * sqrt(Z8);
+        return z;
+    }
+}
+
+/**
+ * @return {number}
+ */
+function Norm_p(z) {
+    let absz = Math.abs(z);
+    let a1 = 0.0000053830;
+    let a2 = 0.0000488906;
+    let a3 = 0.0000380036;
+    let a4 = 0.0032776263;
+    let a5 = 0.0211410061;
+    let a6 = 0.0498673470;
+    let p = (((((a1 * absz + a2) * absz + a3) * absz + a4) * absz + a5) * absz + a6) * absz + 1;
+    p = Math.pow(p, -16);
+    return p;
+}
+
+function calcpva(df, tva) {
+    if ((!!df) && (!!tva)) {
+        return TtoP(tva, df);
+    } else {
+        return "Error";
+    }
+}
+
+
+// p-value end
 
 //初始化数组和对象
 let d1 = [];
@@ -274,18 +350,19 @@ function infoButton() {
 }
 
 function calcButton() {
-    function AnsNode(val, id, n) {
+    function AnsNode(val, id, n, pv) {
         this.val = val;
         this.id = id;
         this.n = n;
+        this.pv = pv;
     }
 
     function compareNode(property) {
         return function (a, b) {
             if (a["n"] <= 2) return 10000000.0;
             if (b["n"] <= 2) return -10000000.0;
-            const value1 = Math.abs(a[property]);
-            const value2 = Math.abs(b[property]);
+            const value1 = (a[property]);
+            const value2 = (b[property]);
             return value2 - value1;
         };
     }
@@ -340,11 +417,20 @@ function calcButton() {
         let t_ans = n * sum_xy - sum_x * sum_y;
         t_ans /= Math.sqrt(n * sum_xx - sum_x * sum_x);
         t_ans /= Math.sqrt(n * sum_yy - sum_y * sum_y);
-        ans.push(new AnsNode(t_ans, "OverAll", n));
+        ans.push(new AnsNode(t_ans, "总计", n, 0));
     }
     //---------
 
-    ans = ans.sort(compareNode("val"));
+    for (let i = 0; i < ans.length; i++) {
+        const t = ans[i];
+        console.log(t.val);
+        console.log(t.n);
+        console.log((t.n - 2) / (1 - t.val * t.val));
+        ans[i].pv = calcpva(t.n - 2, t.val * Math.sqrt((t.n - 2) / (1 - t.val * t.val)));
+    }
+
+
+    ans = ans.sort(compareNode("pv"));
     myDate = new Date();
     time2 = myDate.getTime();
 
@@ -352,20 +438,23 @@ function calcButton() {
         document.getElementById("idOfRelat").innerHTML +=
             "<br>* 计算用时: " + (time2 - time1) + "ms";
         document.getElementById("tableOfR").innerHTML +=
-            "<tr><td>category</td><td>点数</td><td>相关系数</td>";
+            "<tr><td>category</td><td>点数</td><td>相关系数</td><td>P值</td>";
     }
+
     for (const p in ans) {
         let tableItem = "<tr>";
         tableItem += "<td> " + ans[p].id + " </td>";
         tableItem += "<td> " + ans[p].n + " </td>";
         if (ans[p].n <= 2) {
-            tableItem += "<td>数据量不足</td>";
+            tableItem += "<td>数据量不足</td><td>数据量不足</td>";
         } else {
             tableItem += "<td> " + ans[p].val.toFixed(8) + " </td>";
+            tableItem += "<td> " + ans[p].pv + " </td>";    //TODO 科学记数法
         }
         tableItem += "</tr>";
         document.getElementById("tableOfR").innerHTML += tableItem;
     }
+
     document.getElementById("idOfRelat").style.display = "block";
     //console.log(ans.sort(compareNode("val")));
 }
