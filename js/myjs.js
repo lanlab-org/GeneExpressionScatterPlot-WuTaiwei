@@ -1,33 +1,49 @@
 /* exported beginSSP, clearButton, returenButton,infoButton,calcButton*/
 
+const Eu = new Decimal("2.718281828459045235360287471352662497757");
 
 // p-value start
-
 
 /**
  * @return {number}
  */
 function TtoP(t, df) {
-    let p;
-    with (Math) {
-        let abst = abs(t), tsq = t * t;
-        if (df === 1) {
-            p = 1 - 2 * atan(abst) / PI;
-        } else if (df === 2) {
-            p = 1 - abst / sqrt(tsq + 2);
-        } else if (df === 3) {
-            p = 1 - 2 * (atan(abst / sqrt(3)) + abst * sqrt(3) / (tsq + 3)) / PI;
-        } else if (df === 4) {
-            p = 1 - abst * (1 + 2 / (tsq + 4)) / sqrt(tsq + 4);
+    let p = new Decimal(0);
+    console.log(p.add(1).toString());
+    console.log("df:" + df.toString());
+    console.log("t:" + t.toString());
+    with (Decimal) {
+        const PI = new Decimal(acos(-1));
+        let abst = abs(t), tsq = mul(t, t);
+        if (df.eq(1)) {
+            p = p.add(1).sub(mul(2, div(atan(abst), PI)));
+            //p = 1 - 2 * atan(abst) / PI;
+        } else if (df.eq(2)) {
+            p = p.add(1).sub(div(abst, sqrt(add(tsq, 2))));
+            //p = 1 - abst / sqrt(tsq + 2);
+        } else if (df.eq(3)) {
+            p = p.add(1).sub(
+                mul(2, add(atan(div(abst, sqrt(3))), mul(abst, sqrt(3).div(add(tsq, 3))))).div(PI)
+            );
+            console.log(p.toString());
+            //p = 1 - 2 *(atan(abst / sqrt(3))+abst * sqrt(3) / (tsq + 3)) / PI;
+        } else if (df.eq(4)) {
+            p = p.add(1).sub(
+                mul(abst, add(1, div(2, add(tsq, 4)))).div(sqrt(add(tsq, 4)))
+            );
+            p = sub(1, mul(abst, add(1, div(2, add(tsq, 4)))).div(sqrt(add(tsq, 4))));
         } else {
             let z = TtoZ(abst, df);
-            if (df > 4) {
+            // console.log(">>z=" + z.toString());
+
+            if (df.gt(4)) {
                 p = Norm_p(z);
             } else {
                 p = Norm_p(z);
             }
         }
     }
+    // console.log(p.toString());
     return p;
 }
 
@@ -35,18 +51,33 @@ function TtoP(t, df) {
  * @return {number}
  */
 function TtoZ(t, df) {
-    let A9 = df - 0.5;
-    let B9 = 48 * A9 * A9;
-    let T9 = t * t / df, Z8, P7, B7, z;
-    with (Math) {
-        if (T9 >= 0.04) {
-            Z8 = A9 * log(1 + T9);
+    with (Decimal) {
+        let A9 = sub(df, 0.5);
+        //let A9 = df - 0.5;
+        let B9 = mul(mul(48, A9), A9);
+        //let B9 = 48 * A9 * A9;
+        let T9 = mul(t, t).div(df), Z8, P7, B7, z;
+
+        // console.log(A9.toString());
+        // console.log(B9.toString());
+        // console.log(T9.toString());
+
+        if (T9.gte(0.04)) {
+            Z8 = mul(A9, log(add(1, T9), Eu));
+            console.log("Z8=" + Z8.toString());
         } else {
-            Z8 = A9 * (((1 - T9 * 0.75) * T9 / 3 - 0.5) * T9 + 1) * T9;
+            //todo here might be a bug
+            Z8 = A9.mul(sub(1, T9.mul(0.75)).mul(T9).div(3).sub(0.5).mul(T9).add(1)).mul(T9);
+            //Z8 = A9 * (((1 - T9 * 0.75) * T9 / 3 - 0.5) * T9 + 1) * T9;
         }
-        P7 = ((0.4 * Z8 + 3.3) * Z8 + 24) * Z8 + 85.5;
-        B7 = 0.8 * pow(Z8, 2) + 100 + B9;
-        z = (1 + (-P7 / B7 + Z8 + 3) / B9) * sqrt(Z8);
+        P7 = add(mul(add(mul(add(mul(0.4, Z8), 3.3), Z8), 24), Z8), 85.5);
+        //P7 = ((0.4 * Z8 + 3.3) * Z8 + 24) * Z8 + 85.5;
+        B7 = mul(0.8, Z8.pow(2)).add(100).add(B9);
+        //B7 = 0.8 * pow(Z8, 2) + 100 + B9;
+        z = add(1, P7.mul(-1).div(B7).add(Z8).add(3).div(B9)).mul(sqrt(Z8));
+        //z = (1 + (-P7 / B7 + Z8 + 3) / B9) * sqrt(Z8);
+        // console.log("P7=" + P7.toString());
+        // console.log("B7=" + B7.toString());
         return z;
     }
 }
@@ -55,21 +86,39 @@ function TtoZ(t, df) {
  * @return {number}
  */
 function Norm_p(z) {
-    let absz = Math.abs(z);
-    let a1 = 0.0000053830;
-    let a2 = 0.0000488906;
-    let a3 = 0.0000380036;
-    let a4 = 0.0032776263;
-    let a5 = 0.0211410061;
-    let a6 = 0.0498673470;
-    let p = (((((a1 * absz + a2) * absz + a3) * absz + a4) * absz + a5) * absz + a6) * absz + 1;
-    p = Math.pow(p, -16);
+    let absz = Decimal.abs(z);
+    let a1 = "0.0000053830";
+    let a2 = "0.0000488906";
+    let a3 = "0.0000380036";
+    let a4 = "0.0032776263";
+    let a5 = "0.0211410061";
+    let a6 = "0.0498673470";
+    let p = new Decimal(0);
+    p = p.add(a1)
+        .mul(absz)
+        .add(a2)
+        .mul(absz)
+        .add(a3)
+        .mul(absz)
+        .add(a4)
+        .mul(absz)
+        .add(a5)
+        .mul(absz)
+        .add(a6)
+        .mul(absz)
+        .add(1);
+    //let p = (((((a1 * absz + a2) * absz + a3) * absz + a4) * absz + a5) * absz + a6) * absz + 1;
+    p = p.pow(-16);
+    //p = Math.pow(p, -16);
     return p;
 }
 
 function calcpva(df, tva) {
     if ((!!df) && (!!tva)) {
-        return TtoP(tva, df);
+        //_df = new Decimal(df);
+        // console.log(_df.toString());
+        //_tva = new Decimal(tva);
+        return TtoP(tva, df).toExponential(6);
     } else {
         return "Error";
     }
@@ -417,16 +466,23 @@ function calcButton() {
         let t_ans = n * sum_xy - sum_x * sum_y;
         t_ans /= Math.sqrt(n * sum_xx - sum_x * sum_x);
         t_ans /= Math.sqrt(n * sum_yy - sum_y * sum_y);
-        ans.push(new AnsNode(t_ans, "总计", n, 0));
+        ans.push(new AnsNode(t_ans, "总计", n));
     }
     //---------
 
+
     for (let i = 0; i < ans.length; i++) {
         const t = ans[i];
-        console.log(t.val);
-        console.log(t.n);
-        console.log((t.n - 2) / (1 - t.val * t.val));
-        ans[i].pv = calcpva(t.n - 2, t.val * Math.sqrt((t.n - 2) / (1 - t.val * t.val)));
+        // console.log(t.val);
+        // console.log(t.n);
+        // console.log((t.n - 2) / (1 - t.val * t.val));
+        let r = new Decimal(t.val);
+        let n = new Decimal(t.n);
+        with (Decimal) {
+            let para1 = sub(n, 2);
+            let para2 = r.mul(sqrt(sub(n, 2).div(sub(1, mul(r, r)))));
+            ans[i].pv = calcpva(para1, para2);
+        }
     }
 
 
@@ -449,7 +505,7 @@ function calcButton() {
             tableItem += "<td>数据量不足</td><td>数据量不足</td>";
         } else {
             tableItem += "<td> " + ans[p].val.toFixed(8) + " </td>";
-            tableItem += "<td> " + ans[p].pv.toExponential(6) + " </td>";    //科学记数法
+            tableItem += "<td> " + ans[p].pv + " </td>";    //科学记数法
         }
         tableItem += "</tr>";
         document.getElementById("tableOfR").innerHTML += tableItem;
