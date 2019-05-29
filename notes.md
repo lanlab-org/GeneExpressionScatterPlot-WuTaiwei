@@ -1,3 +1,8 @@
+#[javaScript中的with()是什么方法?](https://blog.csdn.net/mini_1251861209/article/details/80666494)
+
+#[P值计算器](https://www.easycalculation.com/statistics/p-value-t-test.php)
+一个在线公式
+
 #[关于显著性检验，你想要的都在这儿了！！（基础篇）](https://www.cnblogs.com/hdu-zsk/p/6293721.html)
 学习显著性检验
 
