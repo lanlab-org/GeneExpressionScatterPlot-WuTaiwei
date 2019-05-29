@@ -1,6 +1,5 @@
-var gammaCollection = require('./gamma.js');
-var log1p = require('./log.js').log1p;
-
+import gammaCollection from "./gamma.js";
+import {log1p} from "./log.js";
 //
 // The beta functions are taken from the jStat library, and modified to fit
 // the API and style pattern used in this module.
@@ -45,7 +44,7 @@ function beta(x, y) {
     }
 }
 
-exports.beta = beta;
+export {beta}
 
 function logBeta(x, y) {
     if (x < 0 || y < 0) {
@@ -61,7 +60,7 @@ function logBeta(x, y) {
     }
 }
 
-exports.logBeta = logBeta;
+export {logBeta}
 
 // evaluates the continued fraction for incomplete beta function by modified Lentz's method.
 function betacf(x, a, b) {
@@ -101,6 +100,8 @@ function betacf(x, a, b) {
     return h;
 }
 
+export {betacf}
+
 // Returns the incomplete beta function I_x(a,b)
 function incBeta(x, a, b) {
     if (x < 0 || x > 1) {
@@ -129,7 +130,7 @@ function incBeta(x, a, b) {
     }
 }
 
-exports.incBeta = incBeta;
+export {incBeta}
 
 // Returns the inverse of the incomplete beta function
 function invIncBeta(p, a, b) {
@@ -191,4 +192,4 @@ function invIncBeta(p, a, b) {
     }
 }
 
-exports.invIncBeta = invIncBeta;
+export {invIncBeta}

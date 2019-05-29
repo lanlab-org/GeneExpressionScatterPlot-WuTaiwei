@@ -83,7 +83,7 @@ function gamma(x) {
 }
 
 // gamma functions goes under two names
-exports.gamma = gamma;
+export {gamma}
 
 //
 // Modified form:

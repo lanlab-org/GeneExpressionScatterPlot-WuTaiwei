@@ -20,7 +20,7 @@ function log1p(x) {
     }
 }
 
-exports.log1p = log1p;
+export {log1p}
 
 //
 // Modified from:
@@ -301,4 +301,4 @@ function logFactorial(n) {
     }
 }
 
-exports.logFactorial = logFactorial;
+export {logFactorial}

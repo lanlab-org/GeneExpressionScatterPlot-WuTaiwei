@@ -23,7 +23,7 @@ function erf(x) {
     return sign * y;
 }
 
-exports.erf = erf;
+export {erf}
 
 //
 // Combined from two sources:
@@ -63,7 +63,7 @@ function erfc(x) {
     return x >= 0.0 ? erfccheb(x) : 2.0 - erfccheb(-x);
 }
 
-exports.erfc = erfc;
+export {erfc}
 
 //
 // Combined from three sources:
@@ -92,7 +92,7 @@ function invErfc(p) {
     }
 }
 
-exports.invErfc = invErfc;
+export {invErfc}
 
 //
 // Used math: inverf(x) = -inverfc(1 + x);
@@ -106,4 +106,4 @@ function invErf(p) {
     return -invErfc(p + 1);
 }
 
-exports.invErf = invErf;
+export {invErf}
