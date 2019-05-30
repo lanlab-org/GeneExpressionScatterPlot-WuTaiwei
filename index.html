@@ -2,7 +2,6 @@
 <html lang="zh-CN">
 
 <head>
-
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta charset="UTF-8">
     <title>散点图绘制器</title>
@@ -21,7 +20,9 @@
     <script charset="utf-8" src="d3/d3.min.js"></script>
     <script src="c3/c3.min.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
+
     <link href="css/mycss.css" rel="stylesheet">
+    <script src="js/MyQuery.js"></script>
     <style>
         #idOfInfo,
         #idOfChart,
@@ -31,10 +32,11 @@
             display: none;
         }
     </style>
-    <script src="js/MyQuery.js"></script>
 </head>
 
 <body>
+<div id="popInfoBox"></div>
+
 <div class="boxofchart boxborder" id="idOfInput">
     <form class="centeral">
         <div id="data1_Button">上传g1.json</div>
@@ -89,7 +91,6 @@
         <input class="MyButton" id="raButton" type="button" value="隐藏相关系数">
         <input class="MyButton" id="ioButton" type="button" value="隐藏单点信息">
         <input class="MyButton" onclick="returenButton()" type="button" value="返回上传页面">
-
     </form>
 </div>
 <div class="boxofchart boxborder" id="idOfRelat">
@@ -104,6 +105,6 @@
     ©CopyRight 2019-2019 Tieway59 伍泰炜
 </footer>
 </body>
+<script src="js/errorAlarm.js"></script>
 <script src="js/myjs.js"></script>
-
 </html>

@@ -80,12 +80,17 @@ let time1, time2;
 
 //处理数据绘制图表
 function beginSSP() {
+
+
     if (check3 === -1 || check2 === -1 || check1 === -1) {
         alert("上传文件存在错误。");
+        //displayErrorCode(1);
         return;
     }                                                                                          //check3代表有传入info
     if (check1 === 0 || check2 === 0) {
-        alert("文件g1，g2尚未正常上传。");
+        //alert("文件g1，g2尚未正常上传。");
+        if (check1 === 0) displayErrorCode(1);
+        if (check2 === 0) displayErrorCode(2);
         return;
     }
     //返回页头
@@ -165,7 +170,6 @@ function beginSSP() {
         return 0;
     });
     console.log(co);
-
 
     chart = c3.generate({
         transition: {

@@ -1,4 +1,58 @@
-#pvalue 计算代码
+# 网页消息窗提示实践
+
+html:
+```html
+<div id="popInfoBox"></div>
+```
+
+js:
+```javascript
+$(function () {
+        $("#idOfInput").click(function () {
+            $("#popInfoBox").prepend("<div class='errorSignal'>1</div>").show(850);
+            // $("#popInfoBox").prepend("<div class='errorSignal'>2</div>").show();
+            // $("#popInfoBox").prepend("<div class='errorSignal'>3</div>").show();
+            // $("#popInfoBox").prepend("<div class='errorSignal'>4</div>").show();
+            // $("#popInfoBox").prepend("<div class='errorSignal'>5</div>").show();
+            // $("#popInfoBox").prepend("<div class='errorSignal'>6</div>").show();
+            // $("#popInfoBox").prepend("<div class='errorSignal'>7</div>").show();
+            $(".errorSignal").delay(3500).fadeOut(800);
+        });
+    })
+```
+
+css：
+```css
+.errorSignal{
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin:15px;
+	background-color: rgba(255, 0, 0, 0.6);
+	color: white;
+	border-radius: 5px;
+}
+
+#popInfoBox{
+	position: fixed;
+	width: 97vw;
+	height: 95vh;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;//防止透明层挡住鼠标
+
+//flex布局
+	display: flex;
+	justify-content: right;
+	align-content: flex-end;
+	flex-direction: column-reverse;
+	flex-wrap:wrap;
+	align-items :flex-end;
+}
+```
+
+# pvalue 计算代码
 
 clc;
 sprintf("%.30f",(1-Ft(10.957913945876827,8))*2)
@@ -18,12 +72,12 @@ end
 
 
 
-#[javaScript中的with()是什么方法?](https://blog.csdn.net/mini_1251861209/article/details/80666494)
-
-#[P值计算器](https://www.easycalculation.com/statistics/p-value-t-test.php)
+# [javaScript中的with()是什么方法?](https://blog.csdn.net/mini_1251861209/article/details/80666494)
+ 
+# [P值计算器](https://www.easycalculation.com/statistics/p-value-t-test.php)
 一个在线公式
 
-#[关于显著性检验，你想要的都在这儿了！！（基础篇）](https://www.cnblogs.com/hdu-zsk/p/6293721.html)
+# [关于显著性检验，你想要的都在这儿了！！（基础篇）](https://www.cnblogs.com/hdu-zsk/p/6293721.html)
 学习显著性检验
 
 

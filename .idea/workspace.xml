@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2452678-9d61-4bac-84e5-b2d5563aade9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/errorAlarm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/tieway59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/tieway59.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,12 +29,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="101" column="6" lean-forward="true" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+            <state relative-caret-position="280">
+              <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
               <folding>
-                <element signature="e#1794#1800#0" expanded="true" />
-                <element signature="e#3192#3198#0" expanded="true" />
-                <element signature="e#3199#3205#0" expanded="true" />
+                <element signature="e#3150#3156#0" expanded="true" />
+                <element signature="e#3157#3163#0" expanded="true" />
+                <element signature="e#3164#3170#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="22" selection-start-line="10" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="408">
+              <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="83" selection-end-line="18" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -44,8 +52,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testFile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="552">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="30" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,11 +64,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/myjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="169" column="13" lean-forward="true" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="91" column="8" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/errorAlarm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mycss.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -79,6 +108,7 @@
       <find>legend</find>
       <find>info</find>
       <find>tissue</find>
+      <find>displayErrorCode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,7 +125,6 @@
         <option value="$PROJECT_DIR$/MyQuery.js" />
         <option value="$PROJECT_DIR$/data/test1_info.json" />
         <option value="$PROJECT_DIR$/js/myjs - 4月8日修改前版本.js" />
-        <option value="$PROJECT_DIR$/css/mycss.css" />
         <option value="$PROJECT_DIR$/js/MyQuery.js" />
         <option value="$PROJECT_DIR$/changeLog.md" />
         <option value="$PROJECT_DIR$/testcases.final/test_for_speed/N2_n1_S10000_info_miss_rate0.00_info.json" />
@@ -105,12 +134,14 @@
         <option value="$PROJECT_DIR$/js/pValueFunctions/erf.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/gamma.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/log.js" />
-        <option value="$PROJECT_DIR$/testFile.html" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/beta.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" />
-        <option value="$PROJECT_DIR$/js/myjs.js" />
+        <option value="$PROJECT_DIR$/testFile.html" />
         <option value="$PROJECT_DIR$/notes.md" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/myjs.js" />
+        <option value="$PROJECT_DIR$/js/errorAlarm.js" />
+        <option value="$PROJECT_DIR$/css/mycss.css" />
       </list>
     </option>
   </component>
@@ -133,33 +164,27 @@
         <subPane>
           <expand>
             <path>
-              <item name="SSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SSP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSP" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSP" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="pValueFunctions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSP" type="462c0819:PsiDirectoryNode" />
               <item name="testcases.final" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -179,7 +204,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -208,7 +233,7 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SEB/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="myjs.js" type="NodeJSConfigurationType" singleton="false" temporary="true" nameIsGenerated="true" path-to-js-file="js/myjs.js" working-dir="$PROJECT_DIR$">
+    <configuration name="myjs.js" type="NodeJSConfigurationType" singleton="false" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/myjs.js" working-dir="$PROJECT_DIR$">
       <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
         <browser with-js-debugger="true" />
       </EXTENSION>
@@ -259,6 +284,7 @@
       <workItem from="1558717539904" duration="4246000" />
       <workItem from="1558750094041" duration="11296000" />
       <workItem from="1559193193047" duration="3732000" />
+      <workItem from="1559205890017" duration="8017000" />
     </task>
     <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
       <created>1558719642763</created>
@@ -477,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559197132678</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="更新项目名称">
+      <created>1559206111989</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1559206111989</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102180000" />
+    <option name="totallyTimeSpent" value="110197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,6 +527,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840763" visible="true" weight="0.15603584" />
       <window_info id="Structure" order="1" sideWeight="0.50159234" side_tool="true" weight="0.14963119" />
@@ -560,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="微调代码格式，梳理TODO记入readme（网页不可见）" />
     <MESSAGE value="整合test case文件，加入路径" />
     <MESSAGE value="重命名旧的数据生成器，已经失去作用了" />
     <MESSAGE value="修改tissue-&gt;category 未修正变量名" />
@@ -585,7 +618,8 @@
     <MESSAGE value="修复了显隐异常的bug" />
     <MESSAGE value="更新了pvalue计算公式的matlab代码" />
     <MESSAGE value="删除exe文件，简化项目大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除exe文件，简化项目大小" />
+    <MESSAGE value="更新项目名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新项目名称" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -633,13 +667,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/test1_g1.json" />
     <entry file="file://$PROJECT_DIR$/js/myjs - 4月8日修改前版本.js" />
-    <entry file="file://$PROJECT_DIR$/css/mycss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2639">
-          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c3/c3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -783,17 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testFile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/myjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="169" column="13" lean-forward="true" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="91" column="8" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -810,19 +830,43 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="22" selection-start-line="10" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="408">
+          <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="83" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="30" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/errorAlarm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="101" column="6" lean-forward="true" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+        <state relative-caret-position="280">
+          <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
           <folding>
-            <element signature="e#1794#1800#0" expanded="true" />
-            <element signature="e#3192#3198#0" expanded="true" />
-            <element signature="e#3199#3205#0" expanded="true" />
+            <element signature="e#3150#3156#0" expanded="true" />
+            <element signature="e#3157#3163#0" expanded="true" />
+            <element signature="e#3164#3170#0" expanded="true" />
           </folding>
         </state>
       </provider>
