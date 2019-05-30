@@ -1,3 +1,23 @@
+#pvalue 计算代码
+
+clc;
+sprintf("%.30f",(1-Ft(10.957913945876827,8))*2)
+
+function ret=Bt ( a,b,x)
+    syms t
+    ret=int(t^(a-1)*(1-t)^(b-1),t,0,x);
+end
+
+function ret=It(a,b,x)
+    ret=Bt(a,b,x)/Bt(a,b,1);
+end
+
+function ret=Ft(x,k)
+    ret = 1-It(k/2,1/2,k/(x*x+k))/2;
+end
+
+
+
 #[javaScript中的with()是什么方法?](https://blog.csdn.net/mini_1251861209/article/details/80666494)
 
 #[P值计算器](https://www.easycalculation.com/statistics/p-value-t-test.php)
