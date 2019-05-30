@@ -40,6 +40,7 @@ window.onload = function () {
             const reader = new FileReader();                            //实例化一个FileReader对象
             reader.readAsText(file, "gbk");                         //借助 FileReader 的方法，按照文本格式读入文件，第二个参数是编码方式（可空）
             reader.onload = function () {
+
                 tmp1 = this.result;                                       //然后在FileReader的onload方法里，刚刚读入的文件能以文本的形式得到了
                                                                           //注意这个对象还是文本，不能拿来直接用，但首先你可以把它带出来。
             };
@@ -53,6 +54,7 @@ window.onload = function () {
             const reader = new FileReader();
             reader.readAsText(file, "gbk");
             reader.onload = function () {
+
                 tmp2 = this.result;
                 //console.log(this.result);                                     
             };
@@ -83,8 +85,8 @@ function beginSSP() {
 
 
     if (check3 === -1 || check2 === -1 || check1 === -1) {
-        alert("上传文件存在错误。");
-        //displayErrorCode(1);
+        //alert("上传文件存在错误。");
+        displayErrorCode(3);//类型错误
         return;
     }                                                                                          //check3代表有传入info
     if (check1 === 0 || check2 === 0) {
@@ -93,6 +95,32 @@ function beginSSP() {
         if (check2 === 0) displayErrorCode(2);
         return;
     }
+
+    console.log(tmp1.length);
+    console.log(tmp2.length);
+    if ((tmp1.length <= 5) || (tmp2 === "{}")) {
+
+    }
+
+
+    //计时器开始
+    myDate = new Date();
+    time1 = myDate.getTime();
+    //解析文件
+    d1 = JSON.parse(tmp1);
+    d2 = JSON.parse(tmp2);
+    //提示信息（反馈点数）
+    const len_d1 = Object.getOwnPropertyNames(d1).length;
+    const len_d2 = Object.getOwnPropertyNames(d2).length;
+    const len_info = Object.getOwnPropertyNames(info).length;
+
+    if ((!!len_d1) || (!!len_d2)) {
+        if (!!len_d1) displayErrorCode(4);
+        if (!!len_d2) displayErrorCode(5);
+        return;
+    }
+
+
     //返回页头
     scrollTo(0, 0);
     //先隐藏部分卡片
@@ -102,12 +130,7 @@ function beginSSP() {
     document.getElementById("idOfNotice").style.display = "block";
     document.getElementById("idOfOptions").style.display = "block";
 
-    //计时器开始
-    myDate = new Date();
-    time1 = myDate.getTime();
-    //解析文件
-    d1 = JSON.parse(tmp1);
-    d2 = JSON.parse(tmp2);
+
     //因为允许用户不上传info，所以要提防tmp3是undefined的情况
     if (tmp3 !== undefined)
         info = JSON.parse(tmp3);
@@ -145,10 +168,6 @@ function beginSSP() {
             }
         }
     }
-    //提示信息（反馈点数）
-    const len_d1 = Object.getOwnPropertyNames(d1).length;
-    const len_d2 = Object.getOwnPropertyNames(d2).length;
-    const len_info = Object.getOwnPropertyNames(info).length;
 
     document.getElementById("AlarmFile1").innerHTML = d1name;
     document.getElementById("dotsOfFile1").innerHTML = len_d1 + "";

@@ -8,6 +8,15 @@ function displayErrorCode(n) {
         case 2:
             text += "错误02：缺少文件g2";
             break;
+        case 3:
+            text += "错误03：文件存在类型错误或未选择";
+            break;
+        case 4:
+            text += "错误04：文件g1是空文件";
+            break;
+        case 5:
+            text += "错误05：文件g2是空文件";
+            break;
     }
     text += "</div>";
     $("#popInfoBox").prepend(text).show();
@@ -22,9 +31,6 @@ function displayErrorCode(n) {
     setTimeout(function () {//提示完成以后关闭
         tg.remove();
     }, dt + ft);
-    //$('.errorSignal').show().delay(3000).fadeOut();
 }
-
-//displayErrorCode(1)
 
 
