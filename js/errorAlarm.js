@@ -1,4 +1,4 @@
-function displayErrorCode(n) {
+function displayErrorCode(n, x) {
     let text = "<div class='errorSignal' >";
 
     switch (n) {
@@ -17,6 +17,12 @@ function displayErrorCode(n) {
         case 5:
             text += "错误05：文件g2是空文件";
             break;
+        case 6:
+            text += "错误06：文件g1存在数据错误于" + x;
+            break;
+        case 7:
+            text += "错误07：文件g2存在数据错误于" + x;
+            break;
     }
     text += "</div>";
     $("#popInfoBox").prepend(text).show();
@@ -33,4 +39,8 @@ function displayErrorCode(n) {
     }, dt + ft);
 }
 
-
+function isNotANumber(inputData) {
+    //isNaN(inputData)不能判断空串或一个空格
+    //如果是一个空串或是一个空格，而isNaN是做为数字0进行处理的，而parseInt与parseFloat是返回一个错误消息，这个isNaN检查不严密而导致的。
+    return parseFloat(inputData).toString() !== "NaN";
+}

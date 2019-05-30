@@ -119,6 +119,14 @@ function beginSSP() {
         return;
     }
 
+    for (let p in d1) if (isNotANumber(d1[p])) {
+        displayErrorCode(6, p);
+        return;
+    }
+    for (let p in d2) if (isNotANumber(d2[p])) {
+        displayErrorCode(6, p);
+        return;
+    }
 
     //返回页头
     scrollTo(0, 0);
