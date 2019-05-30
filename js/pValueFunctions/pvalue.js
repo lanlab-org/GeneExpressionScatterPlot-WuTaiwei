@@ -1,5 +1,3 @@
-console.log("!!!!");
-
 /**
  * @return {number}
  */
@@ -18,6 +16,3 @@ function Ft_func(x, k) {
 function p_value(t, df) {
     return (1 - Ft_func(t, df)) * 2;
 }
-
-
-console.log(p_value(10.957913945876827, 8));
