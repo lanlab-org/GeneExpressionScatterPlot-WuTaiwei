@@ -167,7 +167,7 @@ function beginSSP() {
     console.log(co);
 
 
-    let chart = c3.generate({
+    chart = c3.generate({
         transition: {
             duration: 500
         },

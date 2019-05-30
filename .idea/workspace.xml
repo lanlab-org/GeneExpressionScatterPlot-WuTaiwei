@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2452678-9d61-4bac-84e5-b2d5563aade9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myjs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,50 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pValueFunctions/pvalue.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pValueFunctions/gamma.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="14" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pValueFunctions/beta.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="99" column="16" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pValueFunctions/erf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="504">
+              <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -81,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/myjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="355" column="31" selection-start-line="355" selection-start-column="31" selection-end-line="355" selection-end-column="31" />
+            <state relative-caret-position="397">
+              <caret line="169" column="13" lean-forward="true" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -136,8 +95,8 @@
         <option value="$PROJECT_DIR$/js/pValueFunctions/log.js" />
         <option value="$PROJECT_DIR$/testFile.html" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/beta.js" />
-        <option value="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" />
         <option value="$PROJECT_DIR$/js/myjs.js" />
       </list>
     </option>
@@ -275,7 +234,7 @@
       <workItem from="1557310712362" duration="2246000" />
       <workItem from="1558717539904" duration="4246000" />
       <workItem from="1558750094041" duration="11296000" />
-      <workItem from="1559193193047" duration="1183000" />
+      <workItem from="1559193193047" duration="1904000" />
     </task>
     <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
       <created>1558719642763</created>
@@ -459,11 +418,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559194315821</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="修复tv和df写反的bug">
+      <created>1559194460179</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1559194460179</updated>
+    </task>
+    <task id="LOCAL-00028" summary="使用科学记数法呈现pvalue">
+      <created>1559194588508</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1559194588509</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99631000" />
+    <option name="totallyTimeSpent" value="100352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,7 +451,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840763" visible="true" weight="0.15603584" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49840763" visible="true" weight="0.15603584" />
       <window_info id="Structure" order="1" sideWeight="0.50159234" side_tool="true" weight="0.14963119" />
       <window_info id="Favorites" order="2" sideWeight="0.50159234" side_tool="true" weight="0.14963119" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -543,8 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="重命名“readme.md”为“notes.md”" />
-    <MESSAGE value="新建“notes.md”" />
     <MESSAGE value="更新“readme.md”，上一个commit表述失误。" />
     <MESSAGE value="更新“readme.md”语法。" />
     <MESSAGE value="添加IDEA实现VSC的note" />
@@ -568,7 +539,9 @@
     <MESSAGE value="删除旧版本pvalue计算函数" />
     <MESSAGE value="修正pvalue的计算" />
     <MESSAGE value="删除Decimal库" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除Decimal库" />
+    <MESSAGE value="修复tv和df写反的bug" />
+    <MESSAGE value="使用科学记数法呈现pvalue" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用科学记数法呈现pvalue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -747,23 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/pValueFunctions/gamma.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pValueFunctions/beta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="99" column="16" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/pValueFunctions/erf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -776,8 +732,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pValueFunctions/pvalue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="312">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pValueFunctions/beta.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pValueFunctions/gamma.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -788,17 +768,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/myjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="355" column="31" selection-start-line="355" selection-start-column="31" selection-end-line="355" selection-end-column="31" />
+        <state relative-caret-position="397">
+          <caret line="169" column="13" lean-forward="true" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
