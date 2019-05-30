@@ -96,12 +96,6 @@ function beginSSP() {
         return;
     }
 
-    console.log(tmp1.length);
-    console.log(tmp2.length);
-    if ((tmp1.length <= 5) || (tmp2 === "{}")) {
-
-    }
-
 
     //计时器开始
     myDate = new Date();
@@ -109,14 +103,19 @@ function beginSSP() {
     //解析文件
     d1 = JSON.parse(tmp1);
     d2 = JSON.parse(tmp2);
+    //因为允许用户不上传info，所以要提防tmp3是undefined的情况
+    if (!!tmp3) info = JSON.parse(tmp3);
     //提示信息（反馈点数）
     const len_d1 = Object.getOwnPropertyNames(d1).length;
     const len_d2 = Object.getOwnPropertyNames(d2).length;
     const len_info = Object.getOwnPropertyNames(info).length;
 
-    if ((!!len_d1) || (!!len_d2)) {
-        if (!!len_d1) displayErrorCode(4);
-        if (!!len_d2) displayErrorCode(5);
+    console.log(len_d1);
+    console.log(len_d2);
+    console.log(len_info);
+    if ((!len_d1) || (!len_d2)) {
+        if (!len_d1) displayErrorCode(4);
+        if (!len_d2) displayErrorCode(5);
         return;
     }
 
@@ -131,9 +130,6 @@ function beginSSP() {
     document.getElementById("idOfOptions").style.display = "block";
 
 
-    //因为允许用户不上传info，所以要提防tmp3是undefined的情况
-    if (tmp3 !== undefined)
-        info = JSON.parse(tmp3);
     //统计点数
     let countDots = 0;
     //遍历info改成了遍历d1
