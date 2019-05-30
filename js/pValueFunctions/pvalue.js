@@ -1,11 +1,10 @@
-import beta from './beta';
-import betacf from './beta';
+console.log("!!!!");
 
 /**
  * @return {number}
  */
-function It_func(x, a, b) {
-    return betacf(x, a, b) / beta(a, b);
+function It_func(a, b, x) {
+    return incBeta(x, a, b) / incBeta(1, a, b);
 }
 
 /**
@@ -16,9 +15,9 @@ function Ft_func(x, k) {
 }
 
 
-function p_value(t, n) {
-    return Ft_func(t, n - 2);
+function p_value(t, df) {
+    return (1 - Ft_func(t, df)) * 2;
 }
 
-export {p_value}
 
+console.log(p_value(10.957913945876827, 8));

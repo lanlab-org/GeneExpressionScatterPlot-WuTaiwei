@@ -83,8 +83,6 @@ function gamma(x) {
 }
 
 // gamma functions goes under two names
-export {gamma}
-
 //
 // Modified form:
 //  C++: http://www.johndcook.com/cpp_gamma.html
@@ -127,4 +125,3 @@ function logGamma(x) {
     }
 }
 
-exports.logGamma = logGamma;

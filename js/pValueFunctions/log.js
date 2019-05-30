@@ -20,8 +20,6 @@ function log1p(x) {
     }
 }
 
-export {log1p}
-
 //
 // Modified from:
 //  C++: http://www.johndcook.com/cpp_erf.html
@@ -301,4 +299,3 @@ function logFactorial(n) {
     }
 }
 
-export {logFactorial}

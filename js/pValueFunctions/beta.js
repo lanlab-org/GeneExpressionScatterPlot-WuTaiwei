@@ -1,5 +1,3 @@
-import gammaCollection from "./gamma.js";
-import {log1p} from "./log.js";
 //
 // The beta functions are taken from the jStat library, and modified to fit
 // the API and style pattern used in this module.
@@ -38,13 +36,12 @@ function beta(x, y) {
 
     // make sure x + y doesn't exceed the upper limit of usable values
     else if (x + y > 170) {
-        return Math.exp(gammaCollection.betaln(x, y));
+        return Math.exp(betaln(x, y));
     } else {
-        return gammaCollection.gamma(x) * gammaCollection.gamma(y) / gammaCollection.gamma(x + y);
+        return gamma(x) * gamma(y) / gamma(x + y);
     }
 }
 
-export {beta}
 
 function logBeta(x, y) {
     if (x < 0 || y < 0) {
@@ -56,11 +53,9 @@ function logBeta(x, y) {
     else if (x === 0 || y === 0) return Infinity;
 
     else {
-        return gammaCollection.logGamma(x) + gammaCollection.logGamma(y) - gammaCollection.logGamma(x + y);
+        return logGamma(x) + logGamma(y) - logGamma(x + y);
     }
 }
-
-export {logBeta}
 
 // evaluates the continued fraction for incomplete beta function by modified Lentz's method.
 function betacf(x, a, b) {
@@ -100,7 +95,6 @@ function betacf(x, a, b) {
     return h;
 }
 
-export {betacf}
 
 // Returns the incomplete beta function I_x(a,b)
 function incBeta(x, a, b) {
@@ -117,9 +111,9 @@ function incBeta(x, a, b) {
 
     else {
         var bt =
-            Math.exp(gammaCollection.logGamma(a + b) -
-                gammaCollection.logGamma(a) -
-                gammaCollection.logGamma(b) +
+            Math.exp(logGamma(a + b) -
+                logGamma(a) -
+                logGamma(b) +
                 a * Math.log(x) +
                 b * log1p(-x));
 
@@ -129,8 +123,6 @@ function incBeta(x, a, b) {
         else return 1 - bt * betacf(1 - x, b, a) / b;
     }
 }
-
-export {incBeta}
 
 // Returns the inverse of the incomplete beta function
 function invIncBeta(p, a, b) {
@@ -172,7 +164,7 @@ function invIncBeta(p, a, b) {
             else x = 1 - Math.pow(b * w * (1 - p), 1 / b);
         }
 
-        afac = -gammaCollection.logGamma(a) - gammaCollection.logGamma(b) + gammaCollection.logGamma(a + b);
+        afac = -logGamma(a) - logGamma(b) + logGamma(a + b);
 
         for (; j < 10; j++) {
             if (x === 0 || x === 1) return x;
@@ -192,4 +184,3 @@ function invIncBeta(p, a, b) {
     }
 }
 
-export {invIncBeta}
