@@ -377,7 +377,7 @@ function calcButton() {
             tableItem += "<td>数据量不足</td><td>数据量不足</td>";
         } else {
             tableItem += "<td> " + ans[p].val.toFixed(8) + " </td>";
-            tableItem += "<td> " + ans[p].pv + " </td>";    //科学记数法
+            tableItem += "<td> " + ans[p].pv.toExponential(6) + " </td>";    //科学记数法
         }
         tableItem += "</tr>";
         document.getElementById("tableOfR").innerHTML += tableItem;

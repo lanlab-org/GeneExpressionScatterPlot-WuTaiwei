@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2452678-9d61-4bac-84e5-b2d5563aade9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myjs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="120">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -83,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/js/myjs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="410">
-              <caret line="379" column="44" selection-start-line="379" selection-start-column="44" selection-end-line="379" selection-end-column="44" />
+              <caret line="355" column="31" selection-start-line="355" selection-start-column="31" selection-end-line="355" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -132,13 +131,13 @@
         <option value="$PROJECT_DIR$/testcases.final/test_for_correctness/N1_n0_S5_info_miss_rate0.00_g2.json" />
         <option value="$PROJECT_DIR$/notes.md" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/erf.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/gamma.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/log.js" />
         <option value="$PROJECT_DIR$/testFile.html" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/beta.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/myjs.js" />
       </list>
     </option>
@@ -276,7 +275,7 @@
       <workItem from="1557310712362" duration="2246000" />
       <workItem from="1558717539904" duration="4246000" />
       <workItem from="1558750094041" duration="11296000" />
-      <workItem from="1559193193047" duration="1058000" />
+      <workItem from="1559193193047" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
       <created>1558719642763</created>
@@ -446,11 +445,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559194120800</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="修正pvalue的计算">
+      <created>1559194278162</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1559194278162</updated>
+    </task>
+    <task id="LOCAL-00026" summary="删除Decimal库">
+      <created>1559194315821</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1559194315821</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99506000" />
+    <option name="totallyTimeSpent" value="99631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -553,7 +566,9 @@
     <MESSAGE value="链接pvalue相关 js" />
     <MESSAGE value="修复pvalue计算bug" />
     <MESSAGE value="删除旧版本pvalue计算函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除旧版本pvalue计算函数" />
+    <MESSAGE value="修正pvalue的计算" />
+    <MESSAGE value="删除Decimal库" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除Decimal库" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -725,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/pValueFunctions/log.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -780,10 +788,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/myjs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
-          <caret line="379" column="44" selection-start-line="379" selection-start-column="44" selection-end-line="379" selection-end-column="44" />
+          <caret line="355" column="31" selection-start-line="355" selection-start-column="31" selection-end-line="355" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
