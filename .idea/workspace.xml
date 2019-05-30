@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b2452678-9d61-4bac-84e5-b2d5563aade9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pValueFunctions/beta.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pValueFunctions/beta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pValueFunctions/erf.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pValueFunctions/erf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pValueFunctions/gamma.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pValueFunctions/gamma.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pValueFunctions/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pValueFunctions/log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myjs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,11 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testFile.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/myjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="379" column="44" selection-start-line="379" selection-start-column="44" selection-end-line="379" selection-end-column="44" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +132,6 @@
         <option value="$PROJECT_DIR$/testcases.final/test_for_correctness/N1_n0_S5_info_miss_rate0.00_g2.json" />
         <option value="$PROJECT_DIR$/notes.md" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/js/myjs.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/erf.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/gamma.js" />
@@ -133,6 +139,7 @@
         <option value="$PROJECT_DIR$/testFile.html" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/beta.js" />
         <option value="$PROJECT_DIR$/js/pValueFunctions/pvalue.js" />
+        <option value="$PROJECT_DIR$/js/myjs.js" />
       </list>
     </option>
   </component>
@@ -269,7 +276,7 @@
       <workItem from="1557310712362" duration="2246000" />
       <workItem from="1558717539904" duration="4246000" />
       <workItem from="1558750094041" duration="11296000" />
-      <workItem from="1559193193047" duration="772000" />
+      <workItem from="1559193193047" duration="1058000" />
     </task>
     <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
       <created>1558719642763</created>
@@ -425,11 +432,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559137689490</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="修复pvalue计算bug">
+      <created>1559193986203</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1559193986203</updated>
+    </task>
+    <task id="LOCAL-00024" summary="删除旧版本pvalue计算函数">
+      <created>1559194120800</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1559194120800</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99220000" />
+    <option name="totallyTimeSpent" value="99506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,7 +465,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49840763" visible="true" weight="0.15603584" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840763" visible="true" weight="0.15603584" />
       <window_info id="Structure" order="1" sideWeight="0.50159234" side_tool="true" weight="0.14963119" />
       <window_info id="Favorites" order="2" sideWeight="0.50159234" side_tool="true" weight="0.14963119" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -530,7 +551,9 @@
     <MESSAGE value="载入辅助计算pvalue的js函数" />
     <MESSAGE value="写好pvalue.js" />
     <MESSAGE value="链接pvalue相关 js" />
-    <option name="LAST_COMMIT_MESSAGE" value="链接pvalue相关 js" />
+    <MESSAGE value="修复pvalue计算bug" />
+    <MESSAGE value="删除旧版本pvalue计算函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除旧版本pvalue计算函数" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -695,16 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/myjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16104">
@@ -764,6 +777,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="379" column="44" selection-start-line="379" selection-start-column="44" selection-end-line="379" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

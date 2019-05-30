@@ -350,13 +350,11 @@ function calcButton() {
         // console.log(t.val);
         // console.log(t.n);
         // console.log((t.n - 2) / (1 - t.val * t.val));
-        let r = new Decimal(t.val);
-        let n = new Decimal(t.n);
-        with (Decimal) {
-            let para1 = sub(n, 2);
-            let para2 = r.mul(sqrt(sub(n, 2).div(sub(1, mul(r, r)))));
-            ans[i].pv = calcpva(para1, para2);
-        }
+        let r = t.val;
+        let n = t.n;
+        let tv = n - 2;
+        let df = r * Math.sqrt((n - 2) / (1 - (r * r)));
+        ans[i].pv = p_value(tv, df);
     }
 
 
