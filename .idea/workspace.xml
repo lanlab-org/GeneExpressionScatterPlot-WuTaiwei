@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2452678-9d61-4bac-84e5-b2d5563aade9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/errorAlarm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/errorAlarm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/myjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myjs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,32 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="18" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testFile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/myjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+            <state relative-caret-position="-2003">
+              <caret line="298" column="21" lean-forward="true" selection-start-line="298" selection-start-column="21" selection-end-line="298" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -68,22 +44,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/errorAlarm.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/corrupted file/N1_n0_S5_info_miss_rate0.00_g1.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="168">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mycss.css">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/empty info/N1_n0_S5_info_miss_rate0.00_info.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+            <state relative-caret-position="24">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/corrupted file/N1_n0_S5_info_miss_rate0.00_g2.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/corrupted file/N1_n0_S5_info_miss_rate0.00_info.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/errorAlarm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_g1.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_g2.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_info.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -135,8 +145,8 @@
         <option value="$PROJECT_DIR$/notes.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/mycss.css" />
-        <option value="$PROJECT_DIR$/js/myjs.js" />
         <option value="$PROJECT_DIR$/js/errorAlarm.js" />
+        <option value="$PROJECT_DIR$/js/myjs.js" />
       </list>
     </option>
   </component>
@@ -182,6 +192,26 @@
               <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSP" type="462c0819:PsiDirectoryNode" />
               <item name="testcases.final" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSP" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases.final" type="462c0819:PsiDirectoryNode" />
+              <item name="test_for_undesired_events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSP" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases.final" type="462c0819:PsiDirectoryNode" />
+              <item name="test_for_undesired_events" type="462c0819:PsiDirectoryNode" />
+              <item name="corrupted file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScatterPlotPainter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSP" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases.final" type="462c0819:PsiDirectoryNode" />
+              <item name="test_for_undesired_events" type="462c0819:PsiDirectoryNode" />
+              <item name="empty info" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,7 +309,7 @@
       <workItem from="1558717539904" duration="4246000" />
       <workItem from="1558750094041" duration="11296000" />
       <workItem from="1559193193047" duration="3732000" />
-      <workItem from="1559205890017" duration="9939000" />
+      <workItem from="1559205890017" duration="10691000" />
     </task>
     <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
       <created>1558719642763</created>
@@ -512,11 +542,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559218563478</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="加入错误检查 3 4 5">
+      <created>1559220296155</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1559220296155</updated>
+    </task>
+    <task id="LOCAL-00035" summary="修复len_info的小bug">
+      <created>1559220992130</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1559220992130</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112119000" />
+    <option name="totallyTimeSpent" value="112871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,8 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="重命名旧的数据生成器，已经失去作用了" />
-    <MESSAGE value="修改tissue-&gt;category 未修正变量名" />
     <MESSAGE value="修正部分语法warning" />
     <MESSAGE value="修正xml tag的warning" />
     <MESSAGE value="优化myjs.js的部分语法" />
@@ -621,7 +663,9 @@
     <MESSAGE value="删除exe文件，简化项目大小" />
     <MESSAGE value="更新项目名称" />
     <MESSAGE value="【大更新】加入错误提示的样式及js" />
-    <option name="LAST_COMMIT_MESSAGE" value="【大更新】加入错误提示的样式及js" />
+    <MESSAGE value="加入错误检查 3 4 5" />
+    <MESSAGE value="修复len_info的小bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复len_info的小bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,9 +722,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_g2.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/testcases.final/test_for_correctness/N1_n0_S10_info_miss_rate0.00_g1.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -844,16 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/myjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -868,8 +899,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/errorAlarm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="528">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_g1.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_g2.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/both g1 and g2 empty/N1_n0_S5_info_miss_rate0.00_info.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/corrupted file/N1_n0_S5_info_miss_rate0.00_info.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/corrupted file/N1_n0_S5_info_miss_rate0.00_g2.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/corrupted file/N1_n0_S5_info_miss_rate0.00_g1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases.final/test_for_undesired_events/empty info/N1_n0_S5_info_miss_rate0.00_info.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2003">
+          <caret line="298" column="21" lean-forward="true" selection-start-line="298" selection-start-column="21" selection-end-line="298" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

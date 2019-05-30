@@ -365,6 +365,7 @@ function calcButton() {
 
 
     for (let i = 0; i < ans.length; i++) {
+        if (ans[i].n <= 2) continue;
         const t = ans[i];
         // console.log(t.val);
         // console.log(t.n);
