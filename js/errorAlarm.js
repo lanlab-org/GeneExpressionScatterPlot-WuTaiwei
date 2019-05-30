@@ -26,13 +26,20 @@ function displayErrorCode(n, x) {
     }
     text += "</div>";
     $("#popInfoBox").prepend(text).show();
-    $(function () {
-        $(".errorSignal").click(function () {
-            this.delay(1000);
-        });
-    });
 
     let dt = 100, ft = 3000, tg = $(".errorSignal");
+    tg.delay(dt).fadeOut(ft);
+    setTimeout(function () {//提示完成以后关闭
+        tg.remove();
+    }, dt + ft);
+}
+
+function displaySuccess() {
+    let text = "<div class='successSignal' >散点图绘制成功！</div>";
+
+    $("#popInfoBox").prepend(text).show();
+
+    let dt = 100, ft = 3000, tg = $(".successSignal");
     tg.delay(dt).fadeOut(ft);
     setTimeout(function () {//提示完成以后关闭
         tg.remove();

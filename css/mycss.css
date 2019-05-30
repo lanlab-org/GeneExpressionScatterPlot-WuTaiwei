@@ -79,6 +79,18 @@
 	box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
 }
 
+.successSignal {
+	width: 450px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin: 15px;
+	background-color: rgba(0, 230, 0, 0.95);
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 25px rgba(0, 230, 0, 0.35);
+}
+
 
 #popInfoBox {
 	position: fixed;
@@ -88,6 +100,7 @@
 	padding: 0;
 	pointer-events: none;
 
+	z-index: 20;
 	display: flex;
 	justify-content: right;
 	align-content: flex-end;
@@ -120,14 +133,13 @@ footer{
 }
 .infoBox{
 	transition: 0.3s;
-	position: fixed;
+	width: 600px !important;
+	margin-left: 10px;
+	margin-bottom: 10px;
 	top:0;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255, 255, 255, 0.85);
 	z-index: 10;
 	left:0;
 	right:0;
 }
-.infoBox:hover{
-	transition: 0.3s;
-	background: rgba(255,255,255,1);
-}
+

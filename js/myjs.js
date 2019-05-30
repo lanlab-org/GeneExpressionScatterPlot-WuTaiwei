@@ -129,6 +129,8 @@ function beginSSP() {
         return;
     }
 
+    displaySuccess();
+
     //返回页头
     scrollTo(0, 0);
     //先隐藏部分卡片
@@ -137,7 +139,6 @@ function beginSSP() {
     document.getElementById("idOfChart").style.display = "block";
     document.getElementById("idOfNotice").style.display = "block";
     document.getElementById("idOfOptions").style.display = "block";
-
 
     //统计点数
     let countDots = 0;
@@ -272,8 +273,7 @@ function beginSSP() {
                     document.getElementById("_y").innerHTML = value;
                     document.getElementById("_tissue").innerHTML = id;
                     document.getElementById("_name").innerHTML = dtls[mp[id]][index + 1];
-                    document.getElementById("_detail").innerHTML =
-                        dtls[mp[id + "."]][index + 1];
+                    document.getElementById("_detail").innerHTML = dtls[mp[id + "."]][index + 1];
                 }
             }
         }
@@ -295,9 +295,7 @@ function returenButton() {
 }
 
 function infoButton() {
-    $("#idOfChart").css("margin-top", "500px");
     document.getElementById("idOfInfo").style.display = "block";
-    scrollTo(0, 0);
 }
 
 function calcButton() {
