@@ -119,14 +119,26 @@ function beginSSP() {
         return;
     }
 
-    for (let p in d1) if (isNotANumber(d1[p])) {
-        //console.log(d1[p]);
-        displayErrorCode(6, p);
-        return;
+    for (let p in d1) {
+        if (d1[p].detail !== undefined) {
+            displayErrorCode(8);
+            return;
+        }
+        if (isNotANumber(d1[p])) {
+            //console.log(d1[p]);
+            displayErrorCode(6, p);
+            return;
+        }
     }
-    for (let p in d2) if (isNotANumber(d2[p])) {
-        displayErrorCode(6, p);
-        return;
+    for (let p in d2) {
+        if (d2[p].detail !== undefined) {
+            displayErrorCode(9);
+            return;
+        }
+        if (isNotANumber(d2[p])) {
+            displayErrorCode(7, p);
+            return;
+        }
     }
 
     displaySuccess();

@@ -23,6 +23,12 @@ function displayErrorCode(n, x) {
         case 7:
             text += "错误07：文件g2存在数据错误于" + x;
             break;
+        case 8:
+            text += "错误08：发现info文件被当作g1上传";
+            break;
+        case 9:
+            text += "错误09：发现info文件被当作g2上传";
+            break;
     }
     text += "</div>";
     $("#popInfoBox").prepend(text).show();
