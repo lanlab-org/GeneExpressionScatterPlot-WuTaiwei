@@ -352,8 +352,8 @@ function calcButton() {
         // console.log((t.n - 2) / (1 - t.val * t.val));
         let r = t.val;
         let n = t.n;
-        let tv = n - 2;
-        let df = r * Math.sqrt((n - 2) / (1 - (r * r)));
+        let df = n - 2;
+        let tv = r * Math.sqrt((n - 2) / (1 - (r * r)));
         ans[i].pv = p_value(tv, df);
     }
 
