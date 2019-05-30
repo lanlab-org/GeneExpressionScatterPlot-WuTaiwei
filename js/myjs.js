@@ -120,7 +120,7 @@ function beginSSP() {
     }
 
     for (let p in d1) if (isNotANumber(d1[p])) {
-        console.log(d1[p]);
+        //console.log(d1[p]);
         displayErrorCode(6, p);
         return;
     }
