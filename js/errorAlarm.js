@@ -42,5 +42,6 @@ function displayErrorCode(n, x) {
 function isNotANumber(inputData) {
     //isNaN(inputData)不能判断空串或一个空格
     //如果是一个空串或是一个空格，而isNaN是做为数字0进行处理的，而parseInt与parseFloat是返回一个错误消息，这个isNaN检查不严密而导致的。
-    return parseFloat(inputData).toString() !== "NaN";
+    //console.log(parseFloat(inputData));
+    return parseFloat(inputData).toString() === "NaN";
 }
