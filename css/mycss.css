@@ -109,12 +109,13 @@
     z-index: 20;
     display: -moz-flex;
     display: flex;
-    justify-content: flex-start;
-<!-- 修正 --> align-content: flex-end;
+    justify-content: flex-start; /*出现了问题必须选这个*/
+    align-content: flex-end;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-items: flex-end;
 }
+
 
 .notice_border {
     background: rgba(0, 100, 200, 0.05);
