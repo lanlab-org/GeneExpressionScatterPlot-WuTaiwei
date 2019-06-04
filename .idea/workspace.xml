@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2452678-9d61-4bac-84e5-b2d5563aade9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+            <state relative-caret-position="432">
+              <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
               <folding>
                 <element signature="e#1924#1930#0" expanded="true" />
                 <element signature="e#3194#3200#0" expanded="true" />
@@ -83,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mycss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+            <state relative-caret-position="344">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
@@ -148,8 +146,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="6" />
+    <option name="x" value="202" />
+    <option name="y" value="97" />
     <option name="width" value="1677" />
     <option name="height" value="1062" />
   </component>
@@ -287,14 +285,7 @@
       <workItem from="1558750094041" duration="11296000" />
       <workItem from="1559193193047" duration="3732000" />
       <workItem from="1559205890017" duration="14497000" />
-      <workItem from="1559234258262" duration="7647000" />
-    </task>
-    <task id="LOCAL-00001" summary="重命名“readme.md”为“notes.md”">
-      <created>1558719642763</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1558719642763</updated>
+      <workItem from="1559234258262" duration="8826000" />
     </task>
     <task id="LOCAL-00002" summary="新建“notes.md”">
       <created>1558719975251</created>
@@ -625,11 +616,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559264378715</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="修正popInfoBox css的小bug">
+      <created>1559269856065</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1559269856066</updated>
+    </task>
+    <task id="LOCAL-00050" summary="修正popInfoBox css的小bug">
+      <created>1559270393673</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1559270393705</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124324000" />
+    <option name="totallyTimeSpent" value="125503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,8 +646,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="202" y="97" width="1677" height="1062" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49840763" weight="0.15603584" />
       <window_info id="Structure" order="1" sideWeight="0.50159234" side_tool="true" weight="0.14963119" />
@@ -658,7 +662,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4981685" weight="0.19599108" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50183153" side_tool="true" weight="0.19599108" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4997236" visible="true" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.4997236" visible="true" weight="0.3418708" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -729,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="删除旧版本pvalue计算函数" />
     <MESSAGE value="修正pvalue的计算" />
     <MESSAGE value="删除Decimal库" />
     <MESSAGE value="修复tv和df写反的bug" />
@@ -754,7 +757,8 @@
     <MESSAGE value="更新文本readme" />
     <MESSAGE value="补充网站注意栏" />
     <MESSAGE value="文本编辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="文本编辑" />
+    <MESSAGE value="修正popInfoBox css的小bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正popInfoBox css的小bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1020,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        <state relative-caret-position="432">
+          <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
           <folding>
             <element signature="e#1924#1930#0" expanded="true" />
             <element signature="e#3194#3200#0" expanded="true" />
@@ -1031,8 +1035,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mycss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+        <state relative-caret-position="344">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
