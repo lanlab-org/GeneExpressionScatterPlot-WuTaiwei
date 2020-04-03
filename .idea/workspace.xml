@@ -147,21 +147,8 @@
       <workItem from="1559234258262" duration="8826000" />
       <workItem from="1559629851104" duration="2168000" />
       <workItem from="1559722459919" duration="113000" />
-      <workItem from="1585276464512" duration="345000" />
-    </task>
-    <task id="LOCAL-00008" summary="整合test case文件，加入路径">
-      <created>1558750780127</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1558750780127</updated>
-    </task>
-    <task id="LOCAL-00009" summary="重命名旧的数据生成器，已经失去作用了">
-      <created>1558750922987</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1558750922987</updated>
+      <workItem from="1585276464512" duration="1217000" />
+      <workItem from="1585278501155" duration="1294000" />
     </task>
     <task id="LOCAL-00010" summary="修改tissue-&gt;category 未修正变量名">
       <created>1558751297092</created>
@@ -492,7 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559647399329</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="创建新的分支">
+      <created>1585276836094</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1585276836094</updated>
+    </task>
+    <task id="LOCAL-00058" summary="添加小组成员：伍泰炜">
+      <created>1585276908367</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1585276908367</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView">
@@ -536,8 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="删除exe文件，简化项目大小" />
-    <MESSAGE value="更新项目名称" />
     <MESSAGE value="【大更新】加入错误提示的样式及js" />
     <MESSAGE value="加入错误检查 3 4 5" />
     <MESSAGE value="修复len_info的小bug" />
@@ -561,7 +560,9 @@
     <MESSAGE value="修正readme的一个句号" />
     <MESSAGE value="修正index注意栏的一个句号" />
     <MESSAGE value="我改了index注意栏的一个句号" />
-    <option name="LAST_COMMIT_MESSAGE" value="我改了index注意栏的一个句号" />
+    <MESSAGE value="创建新的分支" />
+    <MESSAGE value="添加小组成员：伍泰炜" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加小组成员：伍泰炜" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
