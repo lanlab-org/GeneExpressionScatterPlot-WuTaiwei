@@ -46,9 +46,9 @@ g1或g2如果出现空文件，对于本项目主题而言是没有意义的。
 在操作过程中的乱序提交会被检查并反馈，请注意提交顺序。
 
 # Contributor List
- 
-伍泰炜 201736900125
 
-周佳威 201736900130
+[@TieWay59](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=TieWay59) - 伍泰炜 - 201736900125
 
-应   舸 201736900128
+[@wuyanshuai](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=wuyanshuai) - 周佳威 - 201736900130
+
+[@HandsomePupil](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=HandsomePupil) - 应   舸 - 201736900128
