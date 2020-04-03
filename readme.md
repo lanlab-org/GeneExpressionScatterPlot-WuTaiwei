@@ -47,8 +47,15 @@ g1或g2如果出现空文件，对于本项目主题而言是没有意义的。
 
 # Contributor List
 
-zjnuxrc-徐闰钞-201736900127
+[@TieWay59](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=TieWay59) - 伍泰炜 - 201736900125
 
-yueyue0808-陈肖飞-201736900104
+[@wuyanshuai](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=wuyanshuai) - 周佳威 - 201736900130
 
-fangzian-方梓安-201736900105
+[@HandsomePupil](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=HandsomePupil) - 应 舸 - 201736900128
+
+==============
+[@zjnuxrc](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=zjnuxrc) - 徐闰钞 - 201736900127
+
+[@yueyue0808](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=yueyue0808) - 陈肖飞 - 201736900104
+
+[@fangzian](https://github.com/lanlab-org/GeneExpressionScatterPlot-WuTaiwei/commits?author=fangzian) - 方梓安 - 201736900105
