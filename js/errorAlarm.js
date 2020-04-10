@@ -1,3 +1,8 @@
+/**
+ * 在输入异常时，在网页回显错误报告。
+ * @param {int} n - 错误编号。
+ * @param {int} x - 数据出现错误的位置（行号）。
+ */
 function displayErrorCode(n, x) {
     let text = "<div class='errorSignal' >";
 
