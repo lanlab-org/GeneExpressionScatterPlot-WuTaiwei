@@ -47,6 +47,9 @@ function displayErrorCode(n, x) {
     }, dt + ft);
 }
 
+/**
+ * 在绘图无异常时，在网页回显绘制成功的报告。
+ */
 function displaySuccess() {
     let text = "<div class='successSignal' >散点图绘制成功！</div>";
 
