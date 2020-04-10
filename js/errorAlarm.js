@@ -40,7 +40,7 @@ function displayErrorCode(n, x) {
 
     let dt = 100;   // delay time，表示延迟存在的时间
     let ft = 3000;  // fade time，表示渐变消失的时间
-    tg = $(".errorSignal");
+    let tg = $(".errorSignal");
     tg.delay(dt).fadeOut(ft);
     setTimeout(function () {//提示完成以后关闭
         tg.remove();
@@ -55,7 +55,9 @@ function displaySuccess() {
 
     $("#popInfoBox").prepend(text).show();
 
-    let dt = 100, ft = 3000, tg = $(".successSignal");
+    let dt = 100;   // delay time，表示延迟存在的时间
+    let ft = 3000;  // fade time，表示渐变消失的时间
+    let tg = $(".successSignal");
     tg.delay(dt).fadeOut(ft);
     setTimeout(function () {//提示完成以后关闭
         tg.remove();
