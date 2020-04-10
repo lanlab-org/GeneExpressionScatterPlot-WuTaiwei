@@ -38,7 +38,9 @@ function displayErrorCode(n, x) {
     text += "</div>";
     $("#popInfoBox").prepend(text).show();
 
-    let dt = 100, ft = 3000, tg = $(".errorSignal");
+    let dt = 100;
+    let ft = 3000;
+    tg = $(".errorSignal");
     tg.delay(dt).fadeOut(ft);
     setTimeout(function () {//提示完成以后关闭
         tg.remove();
