@@ -38,8 +38,8 @@ function displayErrorCode(n, x) {
     text += "</div>";
     $("#popInfoBox").prepend(text).show();
 
-    let dt = 100;
-    let ft = 3000;
+    let dt = 100;   // delay time，表示延迟存在的时间
+    let ft = 3000;  // fade time，表示渐变消失的时间
     tg = $(".errorSignal");
     tg.delay(dt).fadeOut(ft);
     setTimeout(function () {//提示完成以后关闭

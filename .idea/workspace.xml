@@ -143,21 +143,7 @@
       <workItem from="1585276464512" duration="1217000" />
       <workItem from="1585278501155" duration="1294000" />
       <workItem from="1585890136356" duration="2815000" />
-      <workItem from="1586486921565" duration="591000" />
-    </task>
-    <task id="LOCAL-00010" summary="修改tissue-&gt;category 未修正变量名">
-      <created>1558751297092</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1558751297092</updated>
-    </task>
-    <task id="LOCAL-00011" summary="修正部分语法warning">
-      <created>1558751930022</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1558751930022</updated>
+      <workItem from="1586486921565" duration="925000" />
     </task>
     <task id="LOCAL-00012" summary="修正xml tag的warning">
       <created>1558752062084</created>
@@ -488,7 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585276908367</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="新增 displayErrorCode 函数注释">
+      <created>1586487616105</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1586487616105</updated>
+    </task>
+    <task id="LOCAL-00060" summary="改善被压行的变量声明">
+      <created>1586487702751</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586487702751</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -532,8 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="【大更新】加入错误提示的样式及js" />
-    <MESSAGE value="加入错误检查 3 4 5" />
     <MESSAGE value="修复len_info的小bug" />
     <MESSAGE value="修复数量较少，pvalue计算出错的bug" />
     <MESSAGE value="增加错误监测 6 7" />
@@ -557,16 +555,18 @@
     <MESSAGE value="我改了index注意栏的一个句号" />
     <MESSAGE value="创建新的分支" />
     <MESSAGE value="添加小组成员：伍泰炜" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加小组成员：伍泰炜" />
+    <MESSAGE value="新增 displayErrorCode 函数注释" />
+    <MESSAGE value="改善被压行的变量声明" />
+    <option name="LAST_COMMIT_MESSAGE" value="改善被压行的变量声明" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="41" key="CommitChangelistDialog2" timestamp="1586487614054">
+    <state x="616" y="41" key="CommitChangelistDialog2" timestamp="1586487701329">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="616" y="41" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1586487614054" />
+    <state x="616" y="41" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1586487701329" />
     <state x="511" y="181" key="SettingsEditor" timestamp="1586487518706">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
