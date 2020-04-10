@@ -143,21 +143,7 @@
       <workItem from="1585276464512" duration="1217000" />
       <workItem from="1585278501155" duration="1294000" />
       <workItem from="1585890136356" duration="2815000" />
-      <workItem from="1586486921565" duration="1055000" />
-    </task>
-    <task id="LOCAL-00013" summary="优化myjs.js的部分语法">
-      <created>1558752565548</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1558752565548</updated>
-    </task>
-    <task id="LOCAL-00014" summary="修正myjs.js的冗余代码">
-      <created>1558752995500</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1558752995500</updated>
+      <workItem from="1586486921565" duration="1628000" />
     </task>
     <task id="LOCAL-00015" summary="修改了匹配的输入格式，未测试">
       <created>1558753901670</created>
@@ -488,7 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586487889647</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="新增 displaySuccess 函数注释">
+      <created>1586488106276</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1586488106276</updated>
+    </task>
+    <task id="LOCAL-00063" summary="调整变量 dt ft 的声明">
+      <created>1586488143750</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1586488143750</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -532,8 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="修复数量较少，pvalue计算出错的bug" />
-    <MESSAGE value="增加错误监测 6 7" />
     <MESSAGE value="调整c3 d3的路径，优化规模" />
     <MESSAGE value="修复isNotANumber函数的bug" />
     <MESSAGE value="新建doc文件夹和textBox文件夹整理" />
@@ -557,16 +555,18 @@
     <MESSAGE value="新增 displayErrorCode 函数注释" />
     <MESSAGE value="改善被压行的变量声明" />
     <MESSAGE value="注释局部变量 dt ft 的意义" />
-    <option name="LAST_COMMIT_MESSAGE" value="注释局部变量 dt ft 的意义" />
+    <MESSAGE value="新增 displaySuccess 函数注释" />
+    <MESSAGE value="调整变量 dt ft 的声明" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整变量 dt ft 的声明" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="887" y="101" width="788" height="887" key="CommitChangelistDialog2" timestamp="1586488105219">
+    <state x="887" y="101" width="788" height="887" key="CommitChangelistDialog2" timestamp="1586488143018">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="887" y="101" width="788" height="887" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1586488105219" />
+    <state x="887" y="101" width="788" height="887" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1586488143018" />
     <state x="511" y="181" key="SettingsEditor" timestamp="1586487518706">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

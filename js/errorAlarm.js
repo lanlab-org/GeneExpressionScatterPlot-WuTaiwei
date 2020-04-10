@@ -63,10 +63,16 @@ function displaySuccess() {
         tg.remove();
     }, dt + ft);
 }
-
+/**
+ * 判断inputData不是数字类型的输入。
+ *  注意：isNaN(inputData)不能判断空串或一个空格
+ *  如果是inputData一个空串或是一个空格，
+ *  isNaN是做为数字0进行处理的，
+ *  而parseInt与parseFloat会返回一个错误消息，
+ *  这说明isNaN检查不严密。
+ * @param {string} inputData - 错误编号。
+ * @return {boolean}
+ */
 function isNotANumber(inputData) {
-    //isNaN(inputData)不能判断空串或一个空格
-    //如果是一个空串或是一个空格，而isNaN是做为数字0进行处理的，而parseInt与parseFloat是返回一个错误消息，这个isNaN检查不严密而导致的。
-    //console.log(parseFloat(inputData));
     return parseFloat(inputData).toString() === "NaN";
 }
