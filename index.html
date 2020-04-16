@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!--
+/**
+  * @File  GESP主页文件
+  * @Description 本html文件是index主页
+  * @CreateDate 2020-04-16 14:40:11
+  */
+-->
+
+<!--标记标签内的自然语言的语种，声明网页主要使用的自然语言为中文简体-->
 <html lang="zh-CN">
 
 <head>
@@ -20,8 +29,10 @@
     <script charset="utf-8" src="js/d3/d3.min.js"></script>
     <script src="js/c3/c3.min.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
-
+	
+	<!--导入index的样式文件（页面布局，按钮、文本框样式等）-->
     <link href="css/mycss.css" rel="stylesheet">
+	<!--导入index页面的js文件（包含有按钮动作，交互动作等等）-->
     <script src="js/MyQuery.js"></script>
     <style>
         #idOfInfo,
@@ -35,6 +46,7 @@
 </head>
 
 <body>
+	<!--右下悬浮-单点信息页   始-->
 <div id="popInfoBox">
     <div class="boxborder boxofchart infoBox" id="idOfInfo">
         <p>实验编号：<span id="_name"> </span></p>
@@ -44,7 +56,9 @@
         <p>detail：<span id="_detail"> </span></p>
     </div>
 </div>
-
+	<!--右下悬浮-单点信息页   止-->
+	
+	<!--数据上传区   始-->
 <div class="boxofchart boxborder" id="idOfInput">
     <form class="centeral">
         <div id="data1_Button">上传g1.json</div>
@@ -57,8 +71,9 @@
         <input id="sub" onclick="beginSSP()" type="button">
     </form>
 </div>
+	<!--数据上传区   止-->
 
-
+<!--使用注意事项文本区   始-->
 <div class="boxofchart notice_border" id="idOfReminder">
     <h2>注&nbsp;意</h2>
     <p>请上传json文件，建议文件均大小不要超过5MB。</p>
@@ -66,8 +81,9 @@
     <p>请依次在文件上传界面传入g1,g2,info三个json文件，确保顺序正确，且文件本身无数据错误。
     </p>
 </div>
+<!--使用注意事项文本区   止-->
 
-
+<!--绘制信息区   始-->
 <div class="boxofchart notice_border" id="idOfNotice">
     <h2>注&nbsp;意</h2>
     <p>本次绘制总计用时：<span id="usedTime"> </span></p>
@@ -78,13 +94,15 @@
     <p>文件"<span id="AlarmFile3"> </span>"条目数：<span id="dotsOfFile3"> </span></p>
     <p>上传数据将在刷新浏览器时删除。</p>
 </div>
+<!--绘制信息区   止-->
 
+<!--       Chart 生成代码      -->
 <div class="boxofchart boxborder" id="idOfChart">
     <div id="chart"></div>
     <div class="container2"></div>
 </div>
 
-
+<!-- 图标控制按钮区     始 -->
 <div class="boxofchart boxborder" id="idOfOptions">
     <form class="centeral">
         <input class="MyButton" onclick="hideAllButton()" type="button" value="隐藏全部数据">
@@ -94,6 +112,10 @@
         <input class="MyButton" onclick="returenButton()" type="button" value="返回上传页面">
     </form>
 </div>
+<!-- 图标控制按钮区     止 -->
+
+
+<!-- 数据分析区     始 -->
 <div class="boxofchart boxborder" id="idOfRelat">
     <h2>数&nbsp;据&nbsp;分&nbsp;析</h2>
     <!--suppress HtmlDeprecatedAttribute -->
@@ -102,6 +124,9 @@
         </tbody>
     </table>
 </div>
+<!-- 数据分析区     止 -->
+
+
 <footer>
     Copyright © 2019 Tieway59 伍泰炜
 </footer>
