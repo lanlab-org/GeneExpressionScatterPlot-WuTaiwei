@@ -6,18 +6,6 @@ let d2name;
 let infoname;
 
 $(document).ready(function () {
-    $('#data1_Button').click(function () {
-        return $('#data1').click();
-    });
-    $('#data2_Button').click(function () {
-        return $('#data2').click();
-    });
-    $('#data3_Button').click(function () {
-        return $('#data3').click();
-    });
-    $('#sub_Button').click(function () {
-        return $('#sub').click();
-    });
     $('#raButton').click(function () {
         if(this.getAttribute("value")==="隐藏相关系数"){
             this.setAttribute("value","显示相关系数");

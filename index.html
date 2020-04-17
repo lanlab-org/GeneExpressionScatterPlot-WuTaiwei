@@ -11,124 +11,128 @@
 <html lang="zh-CN">
 
 <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <meta charset="UTF-8">
-    <title>散点图绘制器</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <meta charset="UTF-8">
+  <title>散点图绘制器</title>
 
-    <!-- function for p-value -->
-    <script src="js/pValueFunctions/beta.js"></script>
-    <script src="js/pValueFunctions/erf.js"></script>
-    <script src="js/pValueFunctions/gamma.js"></script>
-    <script src="js/pValueFunctions/log.js"></script>
-    <script src="js/pValueFunctions/pvalue.js"></script>
+  <!-- function for p-value -->
+  <script src="js/pValueFunctions/beta.js"></script>
+  <script src="js/pValueFunctions/erf.js"></script>
+  <script src="js/pValueFunctions/gamma.js"></script>
+  <script src="js/pValueFunctions/log.js"></script>
+  <script src="js/pValueFunctions/pvalue.js"></script>
 
-    <!-- Load c3.css -->
-    <link href="js/c3/c3.css" rel="stylesheet">
+  <!-- Load c3.css -->
+  <link href="js/c3/c3.css" rel="stylesheet">
 
-    <!-- Load d3.js and c3.js -->
-    <script charset="utf-8" src="js/d3/d3.min.js"></script>
-    <script src="js/c3/c3.min.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
-	
-	<!--导入index的样式文件（页面布局，按钮、文本框样式等）-->
-    <link href="css/mycss.css" rel="stylesheet">
-	<!--导入index页面的js文件（包含有按钮动作，交互动作等等）-->
-    <script src="js/MyQuery.js"></script>
-    <style>
-        #idOfInfo,
-        #idOfChart,
-        #idOfNotice,
-        #idOfOptions,
-        #idOfRelat {
-            display: none;
-        }
-    </style>
+  <!-- Load d3.js and c3.js -->
+  <script charset="utf-8" src="js/d3/d3.min.js"></script>
+  <script src="js/c3/c3.min.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+
+  <!--导入index的样式文件（页面布局，按钮、文本框样式等）-->
+  <link href="css/mycss.css" rel="stylesheet">
+  <!--导入index页面的js文件（包含有按钮动作，交互动作等等）-->
+  <script src="js/MyQuery.js"></script>
+  <style>
+    #idOfInfo,
+    #idOfChart,
+    #idOfNotice,
+    #idOfOptions,
+    #idOfRelat {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-	<!--右下悬浮-单点信息页   始-->
+<!--右下悬浮-单点信息页   始-->
 <div id="popInfoBox">
-    <div class="boxborder boxofchart infoBox" id="idOfInfo">
-        <p>实验编号：<span id="_name"> </span></p>
-        <p>G1：<span id="_x"> </span></p>
-        <p>G2：<span id="_y"> </span></p>
-        <p>category：<span id="_tissue"> </span></p>
-        <p>detail：<span id="_detail"> </span></p>
-    </div>
+  <div class="boxborder boxofchart infoBox" id="idOfInfo">
+    <p>实验编号：<span id="_name"> </span></p>
+    <p>G1：<span id="_x"> </span></p>
+    <p>G2：<span id="_y"> </span></p>
+    <p>category：<span id="_tissue"> </span></p>
+    <p>detail：<span id="_detail"> </span></p>
+  </div>
 </div>
-	<!--右下悬浮-单点信息页   止-->
-	
-	<!--数据上传区   始-->
+<!--右下悬浮-单点信息页   止-->
+
+<!--数据上传区   始-->
 <div class="boxofchart boxborder" id="idOfInput">
-    <form class="centeral">
-        <div id="data1_Button">上传g1.json</div>
-        <input class="MyButtion" id="data1" type="file">
-        <div id="data2_Button">上传g2.json</div>
-        <input class="MyButtion" id="data2" type="file">
-        <div id="data3_Button">上传info.json</div>
-        <input class="MyButtion" id="data3" type="file">
-        <div id="sub_Button">开始绘制</div>
-        <input id="sub" onclick="beginSSP()" type="button">
-    </form>
+  <form class="centeral">
+    <label id="data1_Button">上传g1.json
+      <input class="MyButtion" id="data1" type="file">
+    </label>
+    <label id="data2_Button">上传g2.json
+      <input class="MyButtion" id="data2" type="file">
+    </label>
+    <label id="data3_Button">上传info.json
+      <input class="MyButtion" id="data3" type="file">
+    </label>
+    <label id="sub_Button">开始绘制
+      <input id="sub" onclick="beginSSP()" type="button">
+    </label>
+  </form>
 </div>
-	<!--数据上传区   止-->
+<!--数据上传区   止-->
 
 <!--使用注意事项文本区   始-->
 <div class="boxofchart notice_border" id="idOfReminder">
-    <h2>注&nbsp;意</h2>
-    <p>请上传json文件，建议文件均大小不要超过5MB。</p>
-    <p>不上传info文件，或者没有匹配的类型，网页将默认category为“unknown”。</p>
-    <p>请依次在文件上传界面传入g1,g2,info三个json文件，确保顺序正确，且文件本身无数据错误。
-    </p>
+  <h2>注&nbsp;意</h2>
+  <p>请上传json文件，建议文件均大小不要超过5MB。</p>
+  <p>不上传info文件，或者没有匹配的类型，网页将默认category为“unknown”。</p>
+  <p>请依次在文件上传界面传入g1,g2,info三个json文件，确保顺序正确，且文件本身无数据错误。
+  </p>
 </div>
 <!--使用注意事项文本区   止-->
 
 <!--绘制信息区   始-->
 <div class="boxofchart notice_border" id="idOfNotice">
-    <h2>注&nbsp;意</h2>
-    <p>本次绘制总计用时：<span id="usedTime"> </span></p>
-    <p>本次绘制总计点数：<span id="dotsNum"> </span></p>
-    <p>&nbsp;</p>
-    <p>文件"<span id="AlarmFile1"> </span>"条目数：<span id="dotsOfFile1"> </span></p>
-    <p>文件"<span id="AlarmFile2"> </span>"条目数：<span id="dotsOfFile2"> </span></p>
-    <p>文件"<span id="AlarmFile3"> </span>"条目数：<span id="dotsOfFile3"> </span></p>
-    <p>上传数据将在刷新浏览器时删除。</p>
+  <h2>注&nbsp;意</h2>
+  <p>本次绘制总计用时：<span id="usedTime"> </span></p>
+  <p>本次绘制总计点数：<span id="dotsNum"> </span></p>
+  <p>&nbsp;</p>
+  <p>文件"<span id="AlarmFile1"> </span>"条目数：<span id="dotsOfFile1"> </span></p>
+  <p>文件"<span id="AlarmFile2"> </span>"条目数：<span id="dotsOfFile2"> </span></p>
+  <p>文件"<span id="AlarmFile3"> </span>"条目数：<span id="dotsOfFile3"> </span></p>
+  <p>上传数据将在刷新浏览器时删除。</p>
 </div>
 <!--绘制信息区   止-->
 
 <!--       Chart 生成代码      -->
 <div class="boxofchart boxborder" id="idOfChart">
-    <div id="chart"></div>
-    <div class="container2"></div>
+  <div id="chart"></div>
+  <div class="container2"></div>
 </div>
 
 <!-- 图标控制按钮区     始 -->
 <div class="boxofchart boxborder" id="idOfOptions">
-    <form class="centeral">
-        <input class="MyButton" onclick="hideAllButton()" type="button" value="隐藏全部数据">
-        <input class="MyButton" onclick="dispAllButton()" type="button" value="显示全部数据">
-        <input class="MyButton" id="raButton" type="button" value="隐藏相关系数">
-        <input class="MyButton" id="ioButton" type="button" value="隐藏单点信息">
-        <input class="MyButton" onclick="returenButton()" type="button" value="返回上传页面">
-    </form>
+  <form class="centeral">
+    <input class="MyButton" onclick="hideAllButton()" type="button" value="隐藏全部数据">
+    <input class="MyButton" onclick="dispAllButton()" type="button" value="显示全部数据">
+    <input class="MyButton" id="raButton" type="button" value="隐藏相关系数">
+    <input class="MyButton" id="ioButton" type="button" value="隐藏单点信息">
+    <input class="MyButton" onclick="returenButton()" type="button" value="返回上传页面">
+  </form>
 </div>
 <!-- 图标控制按钮区     止 -->
 
 
 <!-- 数据分析区     始 -->
 <div class="boxofchart boxborder" id="idOfRelat">
-    <h2>数&nbsp;据&nbsp;分&nbsp;析</h2>
-    <!--suppress HtmlDeprecatedAttribute -->
-    <table border="1" cellpadding="0" cellspacing="0" width="500">
-        <tbody id="tableOfR">
-        </tbody>
-    </table>
+  <h2>数&nbsp;据&nbsp;分&nbsp;析</h2>
+  <!--suppress HtmlDeprecatedAttribute -->
+  <table border="1" cellpadding="0" cellspacing="0" width="500">
+    <tbody id="tableOfR">
+    </tbody>
+  </table>
 </div>
 <!-- 数据分析区     止 -->
 
 
 <footer>
-    Copyright © 2019 Tieway59 伍泰炜
+  Copyright © 2019 Tieway59 伍泰炜
 </footer>
 </body>
 <script src="js/errorAlarm.js"></script>
