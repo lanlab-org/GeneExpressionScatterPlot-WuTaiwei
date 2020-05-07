@@ -1,0 +1,30 @@
+@RQ01
+
+Upload three json files by GeneExpressionScatterPlot and Verify the file content's validation
+
+
+@RQ02
+
+Screening genetic data
+
+
+@RQ03
+
+Display single point data information
+
+
+@RQ04
+
+Calculate correlation coefficient and p-value
+
+
+@RQ05
+
+Jump to home page
+
+
+@RQ06
+
+Human-computer interaction interface is simple and clear
+
+
