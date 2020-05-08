@@ -1,0 +1,383 @@
+@T001a
+
+Test title: test case for requirement 1
+
+Desription: The user chooses to upload the data file to the main page. If the data is wrong, an error message will be displayed, requesting the user to upload again. Otherwise, a scatter plot will be generated after running.
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N10_n1_S10_info_miss_rate0.00_g1.json
+g2.json: N10_n1_S10_info_miss_rate0.00_g2.json
+info.json: N10_n1_S10_info_miss_rate0.00_info.json
+
+Expect output: these files can be upload and scatter plot can be displayed successfully.
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T001b
+
+Test title: test case for requirement 1
+
+Desription: The user chooses to upload the data file to the main page. If the data is wrong, an error message will be displayed, requesting the user to upload again. Otherwise, a scatter plot will be generated after running.
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N12_n1_S100_info_miss_rate0.00_g1.json
+g2.json: N12_n1_S100_info_miss_rate0.00_g2.json
+info.json: N12_n1_S100_info_miss_rate0.00_info.json
+
+Expect output: these files can be upload and scatter plot can be displayed successfully.
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T001c
+
+Test title: test case for requirement 1
+
+Desription: The user chooses to upload the data file to the main page. If the data is wrong, an error message will be displayed, requesting the user to upload again. Otherwise, a scatter plot will be generated after running.
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N8_n1_S5000_info_miss_rate0.00_g1.json
+g2.json: N8_n1_S5000_info_miss_rate0.00_g2.json
+info.json: N8_n1_S5000_info_miss_rate0.00_info.json
+
+Expect output: these files can be upload and scatter plot can be displayed successfully.
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T001d
+
+Test title: test case for requirement 1
+
+Desription: The user chooses to upload the data file to the main page. If the data is wrong, an error message will be displayed, requesting the user to upload again. Otherwise, a scatter plot will be generated after running.
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N9_n1_S20000_info_miss_rate0.00_g1.json
+g2.json: N9_n1_S20000_info_miss_rate0.00_g2.json
+info.json: N9_n1_S20000_info_miss_rate0.00_info.json
+
+Expect output: these files can be upload and scatter plot can be displayed successfully.
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T001e
+
+Test title: test case for requirement 1
+
+Desription: The user chooses to upload the data file to the main page. If the data is wrong, an error message will be displayed, requesting the user to upload again. Otherwise, a scatter plot will be generated after running.
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N8_n1_S100000_info_miss_rate0.00_g1.json
+g2.json: N8_n1_S100000_info_miss_rate0.00_g2.json
+info.json: N8_n1_S100000_info_miss_rate0.00_info.json
+
+Expect output: these files can be upload and scatter plot can be displayed successfully.
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T001f
+
+Test title: test case for requirement 1
+
+Desription: g1.json is empty
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N1_n0_S5_info_miss_rate0.00_g1.json
+g2.json: N1_n0_S5_info_miss_rate0.00_g2.json
+info.json: N1_n0_S5_info_miss_rate0.00_info.json
+
+Expect output: these files can't be upload because of the empty g1.json
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T001g
+
+Test title: test case for requirement 1
+
+Desription: g2.json is empty.
+
+Rationale: In a visual user interface, users can quickly analyze gene correlation after uploading data files.
+
+Input:
+g1.json: N1_n0_S5_info_miss_rate0.00_g1.json
+g2.json: N1_n0_S5_info_miss_rate0.00_g1.json
+info.json: N1_n0_S5_info_miss_rate0.00_g1.json
+
+Expect output: these files can't be upload because of the empty g2.json
+
+Actual output: 
+https://www.bilibili.com/video/BV1Ut4y1C758
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T002
+
+Test title: test case for requirement 2
+
+Desription: there are different kinds of colors and each one represent different kind of gene. when users click one color button, all points in this color will show in the scatter plot and other points will be hided.
+
+Rationale: each kind of category is showed in one color
+
+Input:
+g1.json: N8_n1_S5000_info_miss_rate0.00_g1.json
+g2.json: N8_n1_S5000_info_miss_rate0.00_g2.json
+info.json: N8_n1_S5000_info_miss_rate0.00_info.json
+
+Expect output: different kinds of category have different colors and click one color cicle, this kind of category will be diplayed alone.
+
+Actual output: 
+https://www.bilibili.com/video/BV155411x7ij
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T003
+
+Test title: test case for requirement 3
+
+Desription: the detail of one point will be displayed when user move the mouse over the point
+
+Rationale: Each point has specific information of g1, g2 and info. When the point is displayed on the page, the point information will also be brought to the page to be displayed by js.
+
+Input:
+g1.json: N8_n1_S20000_info_miss_rate0.00_g1.json
+g2.json: N8_n1_S20000_info_miss_rate0.00_g2.json
+info.json: N8_n1_S20000_info_miss_rate0.00_info.json
+
+Expect output: when users move mouse over one point, its information will be displayed.
+
+Actual output: 
+https://www.bilibili.com/video/BV1Rz4y1X72L
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-4-25
+
+
+
+@T004a
+
+Test title: test case for requirement 4
+
+Desription: Calculate the number of points, correlation coefficient and p-value of each category of the uploaded file
+
+Rationale: None
+
+Input:
+g1.json: 100point_g1.json
+g2.json: 100point_g2.json
+info.json: 100_point_info.json
+
+Expect output: correlation coefficient=1 and p-value=0
+
+Actual output: 
+https://www.bilibili.com/video/BV17p4y1X7iW
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-5-8
+
+
+
+@T004b
+
+Test title: test case for requirement 4
+
+Desription: Calculate the number of points, correlation coefficient and p-value of each category of the uploaded file
+
+Rationale: None
+
+Input:
+g1.json: N1_n0_S5_info_miss_rate0.00_g1.json
+g2.json: N1_n0_S5_info_miss_rate0.00_g2.json
+info.json: none
+
+Expect output: have coeeleration coefficient and p-value
+
+Actual output: 
+https://www.bilibili.com/video/BV17p4y1X7iW
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-5-8
+
+
+
+@T004c
+
+Test title: test case for requirement 4
+
+Desription: Calculate the number of points, correlation coefficient and p-value of each category of the uploaded file
+
+Rationale: None
+
+Input:
+g1.json: onepoint_g1.json
+g2.json: onepoint_g2.json
+info.json: onepoint_info.json
+
+Expect output: have coeeleration coefficient and p-value
+
+Actual output: 
+https://www.bilibili.com/video/BV17p4y1X7iW
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-5-8
+
+
+
+@T005
+
+Test title: test case for requirement 5
+
+Desription: User can jump to the index page and re-upload the files
+
+Rationale: None
+
+Input: click the return button
+
+Expect output: jump to the index page successfully
+
+Actual output: 
+https://www.bilibili.com/video/BV1nC4y1p7QP
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-5-10
+
+
+
+@T006
+
+Test title: test case for requirement 6
+
+Desription: Users can easily get started and the human-computer interaction experience is good
+
+Rationale: none
+
+Input: none
+
+Expect output: none
+
+Actual output: 
+https://www.bilibili.com/video/BV1tg4y1i7N3
+
+Diagnosis: None
+
+Status: P
+
+Signature: Zhou Jiawei
+
+Date: 2020-5-10
