@@ -2,19 +2,27 @@
 
 ## 1.1 编写目的
 
-
+​    本文档是基因表达可视化散点图软件在前期开发阶段针对用户所进行的用户手册，在本文档中我们通过对使用该软件的用户进行了详细而具体的需求分析，通过该文档，读者可以了解该软件的所有功能以及用户的操作指南。
 
 ## 1.2 项目背景
 
-
+委托单位：2020软件项目管理课程徐闰钞小组
 
 ## 1.3 定义
 
+### 1.3.1 SRS
 
+Software Requirement Specification，SRS，软件需求说明书。
+
+### 1.3.2 GESP
+
+GeneExpressionScatterPlot， GESP， 因表达可视化散点图软件。
 
 ## 1.4 参考资料
 
+软件用户手册格式：[软件用户手册模板](https://blog.csdn.net/qq_32444825/article/details/79412969)
 
+SRS：[需求分析文档](https://201736900125.readthedocs.io/zh_CN/latest/#id3)
 
 # 2. 软件概述
 
