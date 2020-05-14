@@ -79,7 +79,7 @@ g1或g2如果出现空文件，对于本项目主题而言是没有意义的。
 
 除了GitHub上的更新之外，各个小组还用看板来安排事务，每个成员集中精力把一个事务做好。
 
-- [伍泰炜、周佳威、应舸小组]: http://118.25.96.118/kanboard/?controller=BoardViewController&amp;action=show&amp;project_id=26&amp;search=status%3Aopen
+- [伍泰炜、周佳威、应舸小组](http://118.25.96.118/kanboard/?controller=BoardViewController&amp;action=show&amp;project_id=26&amp;search=status%3Aopen)
 
 - 徐闰钞、陈肖飞、方梓安小组
 
