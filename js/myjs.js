@@ -2,8 +2,8 @@
 
 
 //初始化数组和对象
-let d1 = [];
-let d2 = [];
+let d1 = [];        // 存放g1数据的json对象
+let d2 = [];        // 存放g2数据的json对象
 let info = [];
 let oto = {};
 let co = [];
