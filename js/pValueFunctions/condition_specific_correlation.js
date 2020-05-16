@@ -28,6 +28,20 @@ function condition_specific_correlation(g1, g2, info) {
       this.sum_yy += y * y;
     };
 
+    this.calcR = function () {
+      let r = this.sum * this.sum_xy - this.sum_x * this.sum_y;
+      r /= Math.sqrt(this.sum * this.sum_xx - this.sum_x * this.sum_x);
+      r /= Math.sqrt(this.sum * this.sum_yy - this.sum_y * this.sum_y);
+      return r;
+    };
+
+    this.calcP = function (r) {
+      let n = this.sum;
+      if (n <= 2) return "lack of data";
+      let df = n - 2;
+      let tv = r * Math.sqrt((n - 2) / (1 - (r * r)));
+      return p_value(tv, df);
+    }
   }
 
   console.log(dic);
