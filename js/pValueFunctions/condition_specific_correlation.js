@@ -28,6 +28,7 @@ function condition_specific_correlation(g1, g2, info) {
       this.sum_yy += y * y;
     };
 
+    // 计算相关系数
     this.calcR = function () {
       let r = this.sum * this.sum_xy - this.sum_x * this.sum_y;
       r /= Math.sqrt(this.sum * this.sum_xx - this.sum_x * this.sum_x);
@@ -35,6 +36,7 @@ function condition_specific_correlation(g1, g2, info) {
       return r;
     };
 
+    // 计算P-Value
     this.calcP = function (r) {
       let n = this.sum;
       if (n <= 2) return "lack of data";
@@ -42,6 +44,25 @@ function condition_specific_correlation(g1, g2, info) {
       let tv = r * Math.sqrt((n - 2) / (1 - (r * r)));
       return p_value(tv, df);
     }
+  }
+
+  for (const item in info) {
+    const key = info[item].category;
+    dic[key] = new DicNode();
+    cal[key] = new CalNode();
+  }
+
+  for (const id in g1) {
+    const x = g1[id];
+    const y = g2[id];
+    const key = info[id].category;
+    cal[key].add(x, y);
+  }
+
+  for (const key in cal) {
+    let r = cal[key].calcR();
+    let p = cal[key].calcP(r);
+    dic[key].set(r, p);
   }
 
   console.log(dic);
