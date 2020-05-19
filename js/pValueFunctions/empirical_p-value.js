@@ -10,6 +10,7 @@ function empirical_p_value(g1, g2, info) {
     this.add = function (p) {
       this.sum_p += p
     };
+    // 计算empirical_p_value
     this.getEp = function () {
       return this.sum_p / this.sum;
     };
@@ -26,6 +27,7 @@ function empirical_p_value(g1, g2, info) {
     arr2.push(g2[id]);
   }
 
+  //数组打乱函数
   function ArrayShuffle(a) {
     let array = a;
     let len = array.length;
@@ -36,6 +38,7 @@ function empirical_p_value(g1, g2, info) {
     return array;
   }
 
+  //至少打乱1000次
   let n = 1005
   for (let i = 1; i <= n; i++) {
     arr1 = ArrayShuffle(arr1);
@@ -62,6 +65,7 @@ function empirical_p_value(g1, g2, info) {
   console.log(res);
   return res;
 }
+/*
 
 test_g1 = {
   "Sample000001": 4.289573449168518,
@@ -103,3 +107,4 @@ test_info = {
 }
 
 empirical_p_value(test_g1, test_g2, test_info);
+*/
