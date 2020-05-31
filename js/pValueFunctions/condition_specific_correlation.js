@@ -46,12 +46,14 @@ function condition_specific_correlation(g1, g2, info) {
     }
   }
 
+  // 构造字典
   for (const item in info) {
     const key = info[item].category;
     dic[key] = new DicNode();
     cal[key] = new CalNode();
   }
 
+  // 遍历求和
   for (const id in g1) {
     const x = g1[id];
     const y = g2[id];
@@ -59,6 +61,7 @@ function condition_specific_correlation(g1, g2, info) {
     cal[key].add(x, y);
   }
 
+  // 求每个种类的平均值
   for (const key in cal) {
     let r = cal[key].calcR();
     let p = cal[key].calcP(r);
